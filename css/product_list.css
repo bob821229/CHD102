@@ -1,0 +1,238 @@
+.header{
+  position: absolute;
+  z-index: 1;
+
+}
+body {
+  background-image: url(../pic/子彈背景圖.png);
+  background-size: cover;
+}
+.list_banner {
+  width: 100%;
+  height: 800px;
+  background-image: url(../pic/bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+.main_list_wrap {
+  width: 1200px;
+  height: 300px;
+  position: relative;
+  top: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main_list_type {
+  width: 230px;
+  height: 300px;
+}
+.type_pic {
+  width: 230px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.type_pic img {
+  vertical-align: middle;
+}
+.type_name {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+}
+.hide {
+  position: absolute;
+  display: none;
+  top: -10px;
+}
+.hide img {
+  width: 100%;
+  height: 100%;
+}
+.main_list_type:hover .hide {
+  display: block;
+  animation: rotateAnimation 0.5s ease-in-out 0s;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.main_list_type:hover .type_name {
+  color: #f27127;
+}
+.list_title h2 {
+  font-size: 100px;
+  color: #f27127;
+  -webkit-text-stroke: 0px #0000;
+  text-align: center;
+}
+.list_title {
+  width: 100%;
+  position: relative;
+}
+.list_title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(
+    to left,
+    rgba(242, 113, 39, 0) 0%,
+    rgba(242, 113, 39, 1) 50%,
+    rgba(242, 113, 39, 0) 100%
+  );
+}
+.list_product_wrap {
+  width: 1280px;
+  margin: 0 auto 200px;
+  padding: 50px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.list_content {
+  width: 880px;
+  height: 1120px;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 0px 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 280px;
+}
+.sidebar_project p {
+  font-size: 26px;
+  color: #f27127;
+}
+.sidebar_project {
+  width: 200px;
+  height: 60px;
+  border: 1px solid #f27127;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #0000;
+}
+.product_pic{
+    width: 275px;
+    height: 175px;
+    padding:5px;
+    overflow: hidden;
+}
+.product_pic:hover img{
+  transform: scale(1.2);
+}
+.product_pic img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.product_price{
+    padding:5px;
+    font-size: 20px;
+    color: red;
+    display: flex;
+}
+.product_name{
+    width: 115px;
+    height: 35px;
+    color: #fff;
+    background: #f27127;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    top: 70%;
+    box-shadow:2px 2px 5px #000;
+}
+.product_name p{
+    font-size: 16px;
+    text-align: center;
+}
+.product_card{
+    position: relative;
+    background-color:rgba(255, 255, 255, 0.945);
+    box-shadow:2px 2px 5px #ffffffd3;
+}
+.product_icon{
+    display: inline-block;
+    gap: 10px;
+}
+.price{
+    display: inline-block;
+    margin-right: auto;
+    font-size: 22px;
+}
+.product_icon i{
+  margin-right: 10px;
+  color: #000;
+}
+.product_icon i:active{
+  color: #f27127;
+  
+}
+/* .product_card:nth-child(1){
+  grid-area:1/1/2/2;
+}
+.product_card:nth-child(2){
+  grid-area:1/2/2/3;
+}
+.product_card:nth-child(3){
+  grid-area:1/3/2/4 ;
+}
+.product_card:nth-child(4){
+  grid-area:2/1/3/2 ;
+}
+.product_card:nth-child(5){
+  grid-area:2/2/3/3 ;
+}
+.product_card:nth-child(6){
+  grid-area:2/3/3/4 ;
+}
+.product_card:nth-child(7){
+  grid-area:3/1/4/2 ;
+}
+.product_card:nth-child(8){
+  grid-area:3/2/4/3 ;
+}
+.product_card:nth-child(9){
+  grid-area:3/3/4/-1 ;
+}
+.product_card:nth-child(10){
+  grid-area:4/1/-2/2 ;
+}
+.product_card:nth-child(11){
+  grid-area:4/2/-2/-2 ;
+}
+.product_card:nth-child(12){
+  grid-area:4/3/-2/-1 ;
+}
+.product_card:nth-child(13){
+  grid-area:5/1/-1/2 ;
+}
+.product_card:nth-child(14){
+  grid-area:5/2/-1/3 ;
+}
+.product_card:nth-child(15){
+  grid-area:5/3/-1/4 ;
+} */
