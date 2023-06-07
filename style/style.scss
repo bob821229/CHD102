@@ -318,6 +318,7 @@ main.index {
     .hot_product_wrap {
       width: 100%;
       max-width: 1200px;
+      margin-top: 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -566,6 +567,314 @@ main.index {
       // .buyers_photo10 {
       //   grid-area: 8/4/-1/-1;
       // }
+    }
+  }
+}
+//關於我們
+main.about_us {
+  .banner {
+    width: 100%;
+    height: 930px;
+    position: relative;
+    background-image: url(../pic/banner.png);
+    background-size: cover;
+    .slogan {
+      position: absolute;
+      width: 1280px;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+      h3 {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 4.6875rem;
+        font-weight: 300;
+        white-space: nowrap;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+  .about_us {
+    width: 100%;
+    background-image: url(../pic/about\ us.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-position:center center;
+    .about_us_wrap {
+      max-width: 1280px;
+      width: 100%;
+      // position: relative;
+      .about_us_title {
+        // position: absolute;
+        right: 455px;
+        top: 105.09px;
+        h1 {
+        }
+      }
+      .about_us_title_en {
+        // position: absolute;
+        top: 285px;
+        right: 80px;
+        h2 {
+        }
+      }
+      .about_us_content {
+        width: 600px;
+        // position: absolute;
+        top: 465px;
+        right: 0;
+        font-weight: 400;
+        font-size: 1.625rem;
+        line-height: 62px;
+        color: #fff;
+        p {
+        }
+      }
+    }
+  }
+  .ideas {
+    width: 100%;
+    height: 3000px;
+    display: flex;
+    justify-content: center;
+    .ideas_wrap {
+      width: 1280px;
+      height: 3000px;
+      position: relative;
+      .ideas_title {
+        position: relative;
+        h1 {
+        }
+      }
+      .ideas_title_en {
+        position: relative;
+        left: 0;
+        text-align: end;
+        h2 {
+        }
+      }
+      .social_contact {
+        width: 100%;
+        margin-top: 55px;
+        display: flex;
+        .social_contact_title {
+          background: #f4e900;
+          width: 426px;
+          height: 285px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3.75rem;
+          font-weight: 500;
+          h4 {
+            font-size: 3.75rem;
+            font-weight: 500;
+          }
+        }
+        .social_contact_content {
+          width: 853px;
+          height: 670px;
+          display: flex;
+          flex-direction: column;
+          border-left: 1px solid #f4e900;
+          position: relative;
+          .social_contact_pic {
+            width: 100%;
+            height: 470px;
+            img {
+              width: 100%;
+              height: 100%;
+              vertical-align: top;
+            }
+          }
+          .social_contact_txt {
+            font-size: 1.625rem;
+            font-weight: 400;
+            line-height: 50px;
+            color: #fff;
+            padding: 24px 100px;
+            height: 100%;
+            position: relative;
+            p {
+            }
+          }
+          .social_contact_txt::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background: linear-gradient(
+              to right,
+              rgba(244, 233, 0, 1) 0%,
+              rgba(244, 233, 0, 0) 100%
+            );
+            position: absolute;
+            left: 0;
+            top: 100%;
+          }
+        }
+      }
+      .tactical_arena {
+        display: flex;
+        margin-top: 90px;
+        .tactical_arena_pic {
+          img {
+          }
+        }
+        .tactical_arena_content {
+          width: 392px;
+          height: 847px;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          position: relative;
+          border-left: 1px solid #f4e900;
+          .tactical_arena_title {
+            font-size: 3.75rem;
+            font-weight: 500;
+            width: 440px;
+            height: 250px;
+            background-color: #f4e900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 102px;
+            left: -48px;
+            h4 {
+            }
+          }
+          .tactical_arena_txt {
+            color: #fff;
+            font-size: 1.625rem;
+            line-height: 65px;
+            font-weight: 400;
+            margin-top: auto;
+            padding: 86px 19px;
+            p {
+            }
+          }
+        }
+        .tactical_arena_content::after {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 100%;
+          background: linear-gradient(
+            to right,
+            rgba(244, 233, 0, 1) 0%,
+            rgba(244, 233, 0, 0) 100%
+          );
+        }
+      }
+      .exclusive_style {
+        width: 955px;
+        height: 668px;
+        margin-top: 162px;
+        margin-left: auto;
+        display: flex;
+        position: relative;
+        .exclusive_style_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          width: 325px;
+          .exclusive_style_title {
+            width: 394px;
+            height: 280px;
+            background-color: #f4e900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            h4 {
+              font-size: 3.75rem;
+            font-weight: 500;
+            }
+          }
+          .exclusive_style_txt {
+            margin-top: 96px;
+            margin-bottom: auto;
+            font-size: 1.625rem;
+            line-height: 65px;
+            font-weight: 400;
+            padding: 10px 32px;
+            color: #fff;
+            p {
+            }
+          }
+        }
+        .exclusive_style_pic {
+          width: 630px;
+          height: 606px;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+          }
+        }
+      }
+      .exclusive_style::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(244, 233, 0, 0) 0%,
+          rgba(244, 233, 0, 1) 100%
+        );
+      }
+      .exclusive_style::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+          to left,
+          rgba(244, 233, 0, 0) 0%,
+          rgba(244, 233, 0, 1) 100%
+        );
+      }
+    }
+  }
+  .distribution {
+    width: 100%;
+    background: #232323;
+    .distribution_wrap {
+      width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+      align-items: center;
+      .distribution_txt {
+        width: 900px;
+        padding: 50px;
+        h1 {
+          text-align: center;
+        }
+        p {
+          color: #fff;
+          font-size: 1.625rem;
+          line-height: 50px;
+        }
+      }
+      .distribution_pic {
+        width: 100%;
+        height: 600px;
+        vertical-align: top;
+        img {
+          width: 100%;
+          height: 100%;
+          vertical-align: top;
+        }
+      }
     }
   }
 }
@@ -1421,314 +1730,7 @@ button.gotop {
 }
 /*首頁*/
 
-//關於我們
-main.about_us {
-  .banner {
-    width: 100%;
-    height: 930px;
-    position: relative;
-    background-image: url(../pic/banner.png);
-    background-size: cover;
-    .slogan {
-      position: absolute;
-      width: 1280px;
-      left: 50%;
-      top: 55%;
-      transform: translate(-50%, -50%);
-      h3 {
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 4.6875rem;
-        font-weight: 300;
-        white-space: nowrap;
-        text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
-    }
-  }
-  .about_us {
-    width: 100%;
-    background-image: url(../pic/about\ us.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    background-position:center center;
-    .about_us_wrap {
-      max-width: 1280px;
-      width: 100%;
-      // position: relative;
-      .about_us_title {
-        // position: absolute;
-        right: 455px;
-        top: 105.09px;
-        h1 {
-        }
-      }
-      .about_us_title_en {
-        // position: absolute;
-        top: 285px;
-        right: 80px;
-        h2 {
-        }
-      }
-      .about_us_content {
-        width: 600px;
-        // position: absolute;
-        top: 465px;
-        right: 0;
-        font-weight: 400;
-        font-size: 1.625rem;
-        line-height: 62px;
-        color: #fff;
-        p {
-        }
-      }
-    }
-  }
-  .ideas {
-    width: 100%;
-    height: 3000px;
-    display: flex;
-    justify-content: center;
-    .ideas_wrap {
-      width: 1280px;
-      height: 3000px;
-      position: relative;
-      .ideas_title {
-        position: relative;
-        h1 {
-        }
-      }
-      .ideas_title_en {
-        position: relative;
-        left: 0;
-        text-align: end;
-        h2 {
-        }
-      }
-      .social_contact {
-        width: 100%;
-        margin-top: 55px;
-        display: flex;
-        .social_contact_title {
-          background: #f4e900;
-          width: 426px;
-          height: 285px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 3.75rem;
-          font-weight: 500;
-          h4 {
-            font-size: 3.75rem;
-            font-weight: 500;
-          }
-        }
-        .social_contact_content {
-          width: 853px;
-          height: 670px;
-          display: flex;
-          flex-direction: column;
-          border-left: 1px solid #f4e900;
-          position: relative;
-          .social_contact_pic {
-            width: 100%;
-            height: 470px;
-            img {
-              width: 100%;
-              height: 100%;
-              vertical-align: top;
-            }
-          }
-          .social_contact_txt {
-            font-size: 1.625rem;
-            font-weight: 400;
-            line-height: 50px;
-            color: #fff;
-            padding: 24px 100px;
-            height: 100%;
-            position: relative;
-            p {
-            }
-          }
-          .social_contact_txt::after {
-            content: "";
-            display: block;
-            height: 1px;
-            width: 100%;
-            background: linear-gradient(
-              to right,
-              rgba(244, 233, 0, 1) 0%,
-              rgba(244, 233, 0, 0) 100%
-            );
-            position: absolute;
-            left: 0;
-            top: 100%;
-          }
-        }
-      }
-      .tactical_arena {
-        display: flex;
-        margin-top: 90px;
-        .tactical_arena_pic {
-          img {
-          }
-        }
-        .tactical_arena_content {
-          width: 392px;
-          height: 847px;
-          display: flex;
-          flex-direction: column;
-          justify-content: end;
-          position: relative;
-          border-left: 1px solid #f4e900;
-          .tactical_arena_title {
-            font-size: 3.75rem;
-            font-weight: 500;
-            width: 440px;
-            height: 250px;
-            background-color: #f4e900;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 102px;
-            left: -48px;
-            h4 {
-            }
-          }
-          .tactical_arena_txt {
-            color: #fff;
-            font-size: 1.625rem;
-            line-height: 65px;
-            font-weight: 400;
-            margin-top: auto;
-            padding: 86px 19px;
-            p {
-            }
-          }
-        }
-        .tactical_arena_content::after {
-          content: "";
-          display: block;
-          height: 1px;
-          width: 100%;
-          background: linear-gradient(
-            to right,
-            rgba(244, 233, 0, 1) 0%,
-            rgba(244, 233, 0, 0) 100%
-          );
-        }
-      }
-      .exclusive_style {
-        width: 955px;
-        height: 668px;
-        margin-top: 162px;
-        margin-left: auto;
-        display: flex;
-        position: relative;
-        .exclusive_style_content {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          width: 325px;
-          .exclusive_style_title {
-            width: 394px;
-            height: 280px;
-            background-color: #f4e900;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            h4 {
-              font-size: 3.75rem;
-            font-weight: 500;
-            }
-          }
-          .exclusive_style_txt {
-            margin-top: 96px;
-            margin-bottom: auto;
-            font-size: 1.625rem;
-            line-height: 65px;
-            font-weight: 400;
-            padding: 10px 32px;
-            color: #fff;
-            p {
-            }
-          }
-        }
-        .exclusive_style_pic {
-          width: 630px;
-          height: 606px;
-          img {
-            width: 100%;
-            height: 100%;
-            vertical-align: top;
-          }
-        }
-      }
-      .exclusive_style::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
-        background: linear-gradient(
-          to bottom,
-          rgba(244, 233, 0, 0) 0%,
-          rgba(244, 233, 0, 1) 100%
-        );
-      }
-      .exclusive_style::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: linear-gradient(
-          to left,
-          rgba(244, 233, 0, 0) 0%,
-          rgba(244, 233, 0, 1) 100%
-        );
-      }
-    }
-  }
-  .distribution {
-    width: 100%;
-    background: #232323;
-    .distribution_wrap {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 100px;
-      align-items: center;
-      .distribution_txt {
-        width: 900px;
-        padding: 50px;
-        h1 {
-          text-align: center;
-        }
-        p {
-          color: #fff;
-          font-size: 1.625rem;
-          line-height: 50px;
-        }
-      }
-      .distribution_pic {
-        width: 100%;
-        height: 600px;
-        vertical-align: top;
-        img {
-          width: 100%;
-          height: 100%;
-          vertical-align: top;
-        }
-      }
-    }
-  }
-}
+
 //faq
 main.faq {
   .banner {
