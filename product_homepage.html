@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product_homepage</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,10 +37,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
+      <input type="checkbox" id="menu-switch">
       <nav class="navbar">
+        <a class="logo" href="index.html">
+          <img src="pic/ct logo.png" alt="ct_logo_img" />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="about_us.html">關於我們</a>
@@ -42,11 +63,8 @@
             <a href="product_list.html">產品列表</a>
             <a href="product_list.html"><span>Product List</span></a>
           </li>
-          <a href="index.html">
-            <div class="logo">
-              <img src="pic/ct logo.png" alt="ct_logo_img" />
-            </div>
-          </a>
+          <div class="logo_wrap"></div>
+
           <li class="nav-item">
             <a href="form_page.html">會員中心</a>
             <a href="form_page.html"><span>Member Centre</span></a>
@@ -60,125 +78,159 @@
             <a href="store_information.html"><span>Store Information</span></a>
           </li>
           <form class="search-form">
-            
             <input type="search" id="search" placeholder="" />
             <button class="icon">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
         </ul>
+        <label class="hb" for="menu-switch">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
       </nav>
     </header>
-    <div class="banner">
-        <div class="product_pic_wrap">
-            <i class="fa-solid fa-arrow-left"></i>
-            <div class="pic">
-                <img src="pic/ddmk18.png" alt="">
-            </div>
-            <i class="fa-solid fa-arrow-right"></i>
+    <main class="product_homepage">
+      <div class="banner">
+        <div class="owl-carousel owl-theme">
+          <!-- <i class="fa-solid fa-arrow-left"></i> -->
+          <div class="item">
+            <img src="pic/ddmk18.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="pic/dd2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="pic/dd3.png" alt="" />
+          </div>
+          <!-- <i class="fa-solid fa-arrow-right"></i> -->
         </div>
         <div class="product_theme">
-            <div class="product_item">
-                <h4>DANIEL DEFENSE LICENSED MK18</h4>
+          <div class="product_item">
+            <h4>DANIEL DEFENSE LICENSED MK18</h4>
+          </div>
+          <div class="product_item">
+            <div class="pro_color">
+              <span>COLOR:</span>
+              <div class="color">
+                <a href="#"><img src="pic/color_black.png" alt="" /></a>
+              </div>
+              <div class="color">
+                <a href="#"><img src="pic/color_sand.png" alt="" /></a>
+              </div>
             </div>
-            <div class="product_item">
-                <div class="pro_color">
-                    <span>COLOR:</span> 
-                    <div class="color">
-                        <a href="#"><img src="pic/color_black.png" alt=""></a>
-                    </div>
-                    <div class="color">
-                        <a href="#"><img src="pic/color_sand.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="pro_price">
-                    <p>NT<span>13,000</span></p>
-                </div>
+            <div class="pro_price">
+              <p>NT<span>13,000</span></p>
             </div>
-            <div class="product_item">
-                <div class="pro_share">
-                    <span>SHARE:</span><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-weibo"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="pro_btn">
-                    <button class="shopping_card">加入購物車<i class="fa-solid fa-cart-shopping"></i></button>
-                    <button class="collect">收藏<i class="fa-solid fa-heart"></i></button>
-                </div>
+          </div>
+          <div class="product_item">
+            <div class="pro_share">
+              <span>SHARE:</span><i class="fa-brands fa-facebook"></i
+              ><i class="fa-brands fa-weibo"></i
+              ><i class="fa-brands fa-twitter"></i
+              ><i class="fa-brands fa-instagram"></i>
             </div>
+            <div class="pro_btn">
+              <button class="shopping_card">
+                加入購物車<i class="fa-solid fa-cart-shopping"></i>
+              </button>
+              <button class="collect">
+                收藏<i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="pro_main_pic">
-      <div class="pro_specification">
-        <ul class="pro_txt">
-          <li>FEATURES</li>
-          <li>●EMG授權 Daniel Defense MK18 9.55" 護木</li>
-          <li>●EMG授權 Daniel Defense MK18 槍身刻字</li>
-          <li>●EMG ZETA 握把 & 後托</li>
-          <li>●SSS.III 電子扳機</li>
-          <li>●智慧扳機&活塞預拉功能</li>
-          <li>●T型插頭</li>
-          <li>●EBB系統</li>
-          <li>●瓦斯裝飾管</li>
-          <li>●短行程扳機</li>
-          <li>●神匠全鋼齒強化活塞</li>
-          <li>●神匠鋁合金汽缸頭&活塞頭&推彈嘴</li>
-          <li>●神匠金屬下壓豆</li>
-          <li>●分離式齒輪箱</li>
-          <li>●快拆彈簧設計</li>
-        </ul>
-        <i class="fa-solid fa-arrow-right"></i>
       </div>
-    </div>
-    <section class="down_wrap">
-      <div class="youtube">
-        <iframe width="1120" height="630" src="https://www.youtube.com/embed/bFbEzOfmHaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="pro_main_pic">
+        <div class="pro_specification">
+          <ul class="pro_txt">
+            <li>FEATURES</li>
+            <li>EMG授權 Daniel Defense MK18 9.55" 護木</li>
+            <li>EMG授權 Daniel Defense MK18 槍身刻字</li>
+            <li>EMG ZETA 握把 & 後托</li>
+            <li>SSS.III 電子扳機</li>
+            <li>智慧扳機&活塞預拉功能</li>
+            <li>T型插頭</li>
+            <li>EBB系統</li>
+            <li>瓦斯裝飾管</li>
+            <li>短行程扳機</li>
+            <li>神匠全鋼齒強化活塞</li>
+            <li>神匠鋁合金汽缸頭&活塞頭&推彈嘴</li>
+            <li>神匠金屬下壓豆</li>
+            <li>分離式齒輪箱</li>
+            <li>快拆彈簧設計</li>
+          </ul>
+          <!-- <i class="fa-solid fa-arrow-right"></i> -->
+        </div>
       </div>
-      <div class="related_menu_wrap">
-        <div class="related_title">
-          <h4>RELATED GUNS</h4>
+      <section class="down_wrap">
+        <div class="youtube">
+          <iframe
+            width="1120"
+            height="630"
+            src="https://www.youtube.com/embed/bFbEzOfmHaw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="related_menu">
-          <div class="arrow_left">
-            <i class="fa-solid fa-arrow-left"></i>
+        <div class="related_menu_wrap">
+          <div class="related_title">
+            <h4>RELATED GUNS</h4>
           </div>
-          <div class="related_pro">
-            <div class="pro_pic">
-              <img src="pic/pdw9.png" alt="">
+          <div class="owl-carousel2">
+            <div class="item">
+              <div class="pro_pic">
+                <img src="pic/pdw9.png" alt="" />
+              </div>
+              <div class="pro_name">
+                <p>CXP-MARS PDW9</p>
+                <span>CXP-MARS PDW9</span>
+              </div>
             </div>
-            <div class="pro_name">
-              <p>CXP-MARS PDW9</p>
-              <span>CXP-MARS PDW9</span>
+            <div class="item">
+              <div class="pro_pic">
+                <img src="pic/mars.png" alt="" />
+              </div>
+              <div class="pro_name">
+                <p>【Discontinued】CXP-MARS Carbine MTR Stock</p>
+                <span>CXP-MARS</span>
+              </div>
             </div>
-          </div>
-          <div class="related_pro">
-            <div class="pro_pic">
-              <img src="pic/mars.png" alt="">
+            <div class="item">
+              <div class="pro_pic">
+                <img src="pic/sbr.png" alt="" />
+              </div>
+              <div class="pro_name">
+                <p>【Discontinued】CXP-MARS SBR MTR Stock</p>
+                <span>CXP-MARS</span>
+              </div>
             </div>
-            <div class="pro_name">
-              <p>【Discontinued】CXP-MARS Carbine MTR Stock</p>
-              <span>CXP-MARS</span>
-            </div>
-          </div>
-          <div class="related_pro">
-            <div class="pro_pic">
-              <img src="pic/sbr.png" alt="">
-            </div>
-            <div class="pro_name">
-              <p>【Discontinued】CXP-MARS SBR MTR Stock</p>
-              <span>CXP-MARS</span>
-            </div>
-          </div>
-          <div class="arrow_right">
-            <i class="fa-solid fa-arrow-right"></i>
+            <!-- <div class="arrow_right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div> -->
           </div>
         </div>
+      </section>
+    </main>
 
-      </div>
-
-    </section>
-    
     <button class="gotop" onclick="topFunction()" id="myBtn" title="Go to top">
-      <svg class="svg_icon" width="61" height="51" viewBox="0 0 61 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.8402 47.915C36.0169 44.489 36.1175 40.8431 36.1288 37.0613C36.1527 29.0948 35.7766 21.7284 35.1199 15.7496L26.0806 15.719C25.3881 21.6932 24.968 29.0569 24.9441 37.0234C24.9328 40.8051 25.0116 44.4517 25.1678 47.8787C23.8549 48.1422 23.0452 48.5059 23.044 48.9099C23.0416 49.731 26.378 50.4078 30.4961 50.4218C34.6141 50.4357 37.9545 49.7814 37.957 48.9604C37.9582 48.5564 37.1511 48.1873 35.8402 47.915ZM30.6447 0.868169C32.3618 0.87398 33.8831 5.88479 34.8854 13.7666L26.3269 13.7377C27.3764 5.86277 28.9277 0.862359 30.6447 0.868169ZM40.4134 37.0241L45.5885 37.5365L42.3428 44.9661L43.9857 43.2101L48.1719 44.4961L40.9883 50.868L60.3143 44.6926L50.9689 43.5811L46.9009 40.094L49.8513 36.9405L49.7799 36.8876L54.7399 31.2037L40.4134 37.0241ZM15.0402 37.5372L20.2153 37.0247L5.88876 31.2044L10.8488 36.8882L10.7774 36.9411L13.7278 40.0947L9.66024 43.5814L0.31543 44.6929L19.6414 50.8683L12.4579 44.4965L16.643 43.2107L18.2859 44.9668L15.0402 37.5372ZM45.0664 30.3058L39.4242 34.3347L44.8257 23.0836L45.0664 30.3058ZM22.5542 34.3347L16.912 30.3058L17.1526 23.0836L22.5542 34.3347Z" fill="#D9D9D9"/>
+      <svg
+        class="svg_icon"
+        width="61"
+        height="51"
+        viewBox="0 0 61 51"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M35.8402 47.915C36.0169 44.489 36.1175 40.8431 36.1288 37.0613C36.1527 29.0948 35.7766 21.7284 35.1199 15.7496L26.0806 15.719C25.3881 21.6932 24.968 29.0569 24.9441 37.0234C24.9328 40.8051 25.0116 44.4517 25.1678 47.8787C23.8549 48.1422 23.0452 48.5059 23.044 48.9099C23.0416 49.731 26.378 50.4078 30.4961 50.4218C34.6141 50.4357 37.9545 49.7814 37.957 48.9604C37.9582 48.5564 37.1511 48.1873 35.8402 47.915ZM30.6447 0.868169C32.3618 0.87398 33.8831 5.88479 34.8854 13.7666L26.3269 13.7377C27.3764 5.86277 28.9277 0.862359 30.6447 0.868169ZM40.4134 37.0241L45.5885 37.5365L42.3428 44.9661L43.9857 43.2101L48.1719 44.4961L40.9883 50.868L60.3143 44.6926L50.9689 43.5811L46.9009 40.094L49.8513 36.9405L49.7799 36.8876L54.7399 31.2037L40.4134 37.0241ZM15.0402 37.5372L20.2153 37.0247L5.88876 31.2044L10.8488 36.8882L10.7774 36.9411L13.7278 40.0947L9.66024 43.5814L0.31543 44.6929L19.6414 50.8683L12.4579 44.4965L16.643 43.2107L18.2859 44.9668L15.0402 37.5372ZM45.0664 30.3058L39.4242 34.3347L44.8257 23.0836L45.0664 30.3058ZM22.5542 34.3347L16.912 30.3058L17.1526 23.0836L22.5542 34.3347Z"
+          fill="#D9D9D9"
+        />
       </svg>
     </button>
     <footer class="footer">
@@ -237,25 +289,53 @@
         </div>
       </div>
       <script>
-      
         let mybutton = document.getElementById("myBtn");
-        
-        
-        window.onscroll = function() {scrollFunction()};
-        
+
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
             mybutton.style.display = "block";
           } else {
             mybutton.style.display = "none";
           }
         }
-        
+
         function topFunction() {
-          document.body.scrollTop = 0; 
+          document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
-            </script>
+      </script>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <script></script>
   </body>
 </html>

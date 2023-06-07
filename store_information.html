@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>store_information</title>
+    
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/store_information.css" />
-    <link rel="stylesheet" href="css/generic.css" />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,10 +29,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
-    <header class="header">
+    <header>
+      <input type="checkbox" id="menu-switch">
       <nav class="navbar">
+        <a class="logo" href="index.html">
+          <img src="pic/ct logo.png" alt="ct_logo_img" />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="about_us.html">關於我們</a>
@@ -49,11 +55,8 @@
             <a href="product_list.html">產品列表</a>
             <a href="product_list.html"><span>Product List</span></a>
           </li>
-          <a href="index.html">
-            <div class="logo">
-              <img src="pic/ct logo.png" alt="ct_logo_img" />
-            </div>
-          </a>
+          <div class="logo_wrap"></div>
+
           <li class="nav-item">
             <a href="form_page.html">會員中心</a>
             <a href="form_page.html"><span>Member Centre</span></a>
@@ -67,54 +70,38 @@
             <a href="store_information.html"><span>Store Information</span></a>
           </li>
           <form class="search-form">
-            
             <input type="search" id="search" placeholder="" />
             <button class="icon">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
         </ul>
+        <label class="hb" for="menu-switch">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
       </nav>
     </header>
-    <section class="banner">
-      <div class="slogan">
-        <h3>挑戰極限 突破自我</h3>
-        <h3>Challenge the limits exceed yourself</h3>
-      </div>
-    </section>
-    <section class="store_information">
-      <div class="title">
-        <h2>門市資訊</h2>
-      </div>
-      <div class="store_container">
-        <div class="store_card">
-          <div class="store_pic">
-            <img src="pic/store1.jpg" alt="" />
-          </div>
-          <div class="card_txt">
-            <div class="store_name">
-                <p>CatTaticalAirsoft 中壢店</p>
-            </div>
-            <div class="store_txt">
-              <p>電話:0912345678</p>
-              <br />
-              <p>營業時間:11:00~22:00</p>
-              <br />
-              <p>
-                地址:桃園市中壢區中美路二段195巷78-2號桃園市中壢區中美路二段195巷78-2號
-              </p>
-            </div>
-          </div>
+    <main class="store_information">
+      <section class="banner">
+        <div class="slogan">
+          <h3>挑戰極限 突破自我</h3>
+          <h3>Challenge the limits exceed yourself</h3>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.178557652716!2d121.21717351174432!3d24.96003887777205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682235a8057639%3A0x82837f87478b31bc!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit576O6Lev5LqM5q61MTk16Jmf!5e0!3m2!1szh-TW!2stw!4v1684380532180!5m2!1szh-TW!2stw" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section class="store_information">
+        <div class="title">
+          <h2>門市資訊</h2>
         </div>
-      </div>
-      <div class="store_container">
-        <div class="store_card">
+        <div class="store_container">
+          <div class="store_card">
+            <div class="store_pic">
+              <img src="pic/store1.jpg" alt="" />
+            </div>
             <div class="card_txt">
               <div class="store_name">
-                <p>CatTaticalAirsoft 中壢店</p>
+                  <p>CatTaticalAirsoft 中壢店</p>
               </div>
               <div class="store_txt">
                 <p>電話:0912345678</p>
@@ -126,15 +113,37 @@
                 </p>
               </div>
             </div>
-          <div class="store_pic">
-            <img src="pic/store1.jpg" alt="" />
+          </div>
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.178557652716!2d121.21717351174432!3d24.96003887777205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682235a8057639%3A0x82837f87478b31bc!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit576O6Lev5LqM5q61MTk16Jmf!5e0!3m2!1szh-TW!2stw!4v1684380532180!5m2!1szh-TW!2stw" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.178557652716!2d121.21717351174432!3d24.96003887777205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682235a8057639%3A0x82837f87478b31bc!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit576O6Lev5LqM5q61MTk16Jmf!5e0!3m2!1szh-TW!2stw!4v1684380532180!5m2!1szh-TW!2stw" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="store_container">
+          <div class="store_card">
+              <div class="card_txt">
+                <div class="store_name">
+                  <p>CatTaticalAirsoft 中壢店</p>
+                </div>
+                <div class="store_txt">
+                  <p>電話:0912345678</p>
+                  <br />
+                  <p>營業時間:11:00~22:00</p>
+                  <br />
+                  <p>
+                    地址:桃園市中壢區中美路二段195巷78-2號桃園市中壢區中美路二段195巷78-2號
+                  </p>
+                </div>
+              </div>
+            <div class="store_pic">
+              <img src="pic/store1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.178557652716!2d121.21717351174432!3d24.96003887777205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682235a8057639%3A0x82837f87478b31bc!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit576O6Lev5LqM5q61MTk16Jmf!5e0!3m2!1szh-TW!2stw!4v1684380532180!5m2!1szh-TW!2stw" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <button class="gotop" onclick="topFunction()" id="myBtn" title="Go to top">
       <svg class="svg_icon" width="61" height="51" viewBox="0 0 61 51" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M35.8402 47.915C36.0169 44.489 36.1175 40.8431 36.1288 37.0613C36.1527 29.0948 35.7766 21.7284 35.1199 15.7496L26.0806 15.719C25.3881 21.6932 24.968 29.0569 24.9441 37.0234C24.9328 40.8051 25.0116 44.4517 25.1678 47.8787C23.8549 48.1422 23.0452 48.5059 23.044 48.9099C23.0416 49.731 26.378 50.4078 30.4961 50.4218C34.6141 50.4357 37.9545 49.7814 37.957 48.9604C37.9582 48.5564 37.1511 48.1873 35.8402 47.915ZM30.6447 0.868169C32.3618 0.87398 33.8831 5.88479 34.8854 13.7666L26.3269 13.7377C27.3764 5.86277 28.9277 0.862359 30.6447 0.868169ZM40.4134 37.0241L45.5885 37.5365L42.3428 44.9661L43.9857 43.2101L48.1719 44.4961L40.9883 50.868L60.3143 44.6926L50.9689 43.5811L46.9009 40.094L49.8513 36.9405L49.7799 36.8876L54.7399 31.2037L40.4134 37.0241ZM15.0402 37.5372L20.2153 37.0247L5.88876 31.2044L10.8488 36.8882L10.7774 36.9411L13.7278 40.0947L9.66024 43.5814L0.31543 44.6929L19.6414 50.8683L12.4579 44.4965L16.643 43.2107L18.2859 44.9668L15.0402 37.5372ZM45.0664 30.3058L39.4242 34.3347L44.8257 23.0836L45.0664 30.3058ZM22.5542 34.3347L16.912 30.3058L17.1526 23.0836L22.5542 34.3347Z" fill="#D9D9D9"/>
