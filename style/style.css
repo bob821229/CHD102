@@ -40,7 +40,7 @@ body a {
   header #menu-switch:checked + .navbar .hb span:nth-child(1) {
     top: 32.5px;
     rotate: 405deg;
-    transition: top 0.5s, rotate 0.3s 1s;
+    transition: top 0.5s, rotate 0.3s 0.5s;
   }
   header #menu-switch:checked + .navbar .hb span:nth-child(2) {
     display: none;
@@ -48,20 +48,21 @@ body a {
   header #menu-switch:checked + .navbar .hb span:nth-child(3) {
     top: 32.5px;
     rotate: 495deg;
-    transition: top 0.5s, rotate 0.3s 1s;
+    transition: top 0.5s, rotate 0.3s 0.5s;
   }
   header #menu-switch:checked + .navbar .nav-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
+    top: 70px;
   }
   header .navbar {
     width: 100%;
     background-color: #f27127;
     box-shadow: 0 0 30px #000;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -77,7 +78,7 @@ body a {
     align-items: center;
   }
   header .navbar .hb span {
-    width: 63px;
+    width: 50px;
     height: 5px;
     border-radius: 20px;
     background: #000;
@@ -96,14 +97,15 @@ body a {
     transition: top 0.3s 0.5s, rotate 0.5s;
   }
   header .navbar .nav-menu {
-    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 100%;
+    top: -500px;
     height: 500px;
     background: rgba(83, 83, 83, 0.7490196078);
     width: 100%;
+    transition: top 0.5s;
+    z-index: 1;
   }
   header .navbar .nav-menu .nav-item {
     display: flex;
@@ -384,7 +386,7 @@ main.index .about_us {
 }
 main.index .about_us .about_us_wrap {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/0.7;
 }
 main.index .about_us .about_us_wrap .about_us_title {
   text-align: end;
@@ -471,23 +473,25 @@ main.index .buyers_share .buyers_share_wrap img {
   vertical-align: top;
 }
 
+main.about_us {
+  /*關於我們*/
+}
 main.about_us .banner {
   width: 100%;
-  height: 930px;
+  aspect-ratio: 1/0.5;
   position: relative;
   background-image: url(../pic/banner.png);
   background-size: cover;
 }
 main.about_us .banner .slogan {
   position: absolute;
-  width: 1280px;
+  width: 100%;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
 }
 main.about_us .banner .slogan h3 {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 4.6875rem;
   font-weight: 300;
   white-space: nowrap;
   text-align: center;
@@ -497,72 +501,68 @@ main.about_us .about_us {
   width: 100%;
   background-image: url(../pic/about\ us.png);
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  background-position: center center;
 }
 main.about_us .about_us .about_us_wrap {
-  max-width: 1280px;
   width: 100%;
+  aspect-ratio: 1/0.7;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 main.about_us .about_us .about_us_wrap .about_us_title {
-  right: 455px;
-  top: 105.09px;
+  text-align: end;
+  margin-top: 30px;
+  margin-right: 50px;
 }
 main.about_us .about_us .about_us_wrap .about_us_title_en {
-  top: 285px;
-  right: 80px;
+  text-align: end;
 }
 main.about_us .about_us .about_us_wrap .about_us_content {
-  width: 600px;
-  top: 465px;
-  right: 0;
+  width: 30%;
+  margin: 50px 0 0 auto;
   font-weight: 400;
-  font-size: 1.625rem;
-  line-height: 62px;
+  font-size: 1rem;
+  line-height: 30px;
   color: #fff;
 }
 main.about_us .ideas {
+  padding-top: 30px;
   width: 100%;
-  height: 3000px;
   display: flex;
   justify-content: center;
 }
 main.about_us .ideas .ideas_wrap {
-  width: 1280px;
-  height: 3000px;
-  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 main.about_us .ideas .ideas_wrap .ideas_title {
-  position: relative;
+  text-align: center;
 }
 main.about_us .ideas .ideas_wrap .ideas_title_en {
-  position: relative;
   left: 0;
-  text-align: end;
+  text-align: center;
 }
 main.about_us .ideas .ideas_wrap .social_contact {
   width: 100%;
   margin-top: 55px;
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_title {
   background: #f4e900;
-  width: 426px;
-  height: 285px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.75rem;
-  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_title h4 {
-  font-size: 3.75rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_content {
-  width: 853px;
-  height: 670px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-left: 1px solid #f4e900;
@@ -570,20 +570,17 @@ main.about_us .ideas .ideas_wrap .social_contact .social_contact_content {
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_pic {
   width: 100%;
-  height: 470px;
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_pic img {
   width: 100%;
-  height: 100%;
   vertical-align: top;
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_txt {
-  font-size: 1.625rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 50px;
   color: #fff;
-  padding: 24px 100px;
-  height: 100%;
+  padding: 24px;
   position: relative;
 }
 main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_txt::after {
@@ -598,11 +595,20 @@ main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social
 }
 main.about_us .ideas .ideas_wrap .tactical_arena {
   display: flex;
+  width: 100%;
   margin-top: 90px;
+  flex-direction: column;
+}
+main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_pic {
+  width: 100%;
+}
+main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_pic img {
+  width: 100%;
+  vertical-align: top;
 }
 main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content {
-  width: 392px;
-  height: 847px;
+  margin-top: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -610,25 +616,23 @@ main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content {
   border-left: 1px solid #f4e900;
 }
 main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title {
-  font-size: 3.75rem;
+  background: #f4e900;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+}
+main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title h4 {
+  font-size: 2rem;
   font-weight: 500;
-  width: 440px;
-  height: 250px;
-  background-color: #f4e900;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 102px;
-  left: -48px;
 }
 main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_txt {
-  color: #fff;
-  font-size: 1.625rem;
-  line-height: 65px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-top: auto;
-  padding: 86px 19px;
+  line-height: 50px;
+  color: #fff;
+  padding: 24px;
+  position: relative;
 }
 main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content::after {
   content: "";
@@ -638,44 +642,37 @@ main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content::after 
   background: linear-gradient(to right, rgb(244, 233, 0) 0%, rgba(244, 233, 0, 0) 100%);
 }
 main.about_us .ideas .ideas_wrap .exclusive_style {
-  width: 955px;
-  height: 668px;
-  margin-top: 162px;
+  width: 100%;
+  margin-top: 20px;
   margin-left: auto;
   display: flex;
+  flex-direction: column;
   position: relative;
 }
 main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 325px;
 }
 main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_title {
-  width: 394px;
-  height: 280px;
   background-color: #f4e900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
 }
 main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_title h4 {
-  font-size: 3.75rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_txt {
-  margin-top: 96px;
   margin-bottom: auto;
-  font-size: 1.625rem;
-  line-height: 65px;
+  font-size: 1rem;
+  line-height: 45px;
   font-weight: 400;
-  padding: 10px 32px;
+  padding: 24px;
   color: #fff;
 }
 main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_pic {
-  width: 630px;
-  height: 606px;
+  word-wrap: 100%;
 }
 main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_pic img {
   width: 100%;
@@ -705,7 +702,10 @@ main.about_us .distribution {
   background: #232323;
 }
 main.about_us .distribution .distribution_wrap {
-  width: 1280px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -713,26 +713,271 @@ main.about_us .distribution .distribution_wrap {
   align-items: center;
 }
 main.about_us .distribution .distribution_wrap .distribution_txt {
-  width: 900px;
-  padding: 50px;
+  padding: 24px;
 }
 main.about_us .distribution .distribution_wrap .distribution_txt h1 {
   text-align: center;
 }
 main.about_us .distribution .distribution_wrap .distribution_txt p {
+  padding-top: 20px;
   color: #fff;
-  font-size: 1.625rem;
-  line-height: 50px;
+  font-size: 1.5rem;
 }
 main.about_us .distribution .distribution_wrap .distribution_pic {
   width: 100%;
-  height: 600px;
-  vertical-align: top;
 }
 main.about_us .distribution .distribution_wrap .distribution_pic img {
   width: 100%;
-  height: 100%;
   vertical-align: top;
+}
+
+main.store_information .banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  background-image: url(../pic/store_banner.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+main.store_information .banner .slogan {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
+}
+main.store_information .banner h3 {
+  color: rgba(255, 255, 255, 0.253);
+  font-weight: 300;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main.store_information .store_information {
+  width: 100%;
+}
+main.store_information .store_information .title {
+  text-align: center;
+  margin: 50px auto;
+  position: relative;
+}
+main.store_information .store_information .title h2 {
+  color: #fff;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
+}
+main.store_information .store_information .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(243, 243, 243) 50%, rgba(255, 255, 255, 0) 100%);
+}
+main.store_information .store_information .store_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+main.store_information .store_information .store_container .store_card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+main.store_information .store_information .store_container .store_card .store_pic {
+  width: 100%;
+}
+main.store_information .store_information .store_container .store_card .store_pic img {
+  width: 100%;
+  vertical-align: top;
+}
+main.store_information .store_information .store_container .store_card .card_txt {
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.store_information .store_information .store_container .store_card .card_txt .store_name {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+main.store_information .store_information .store_container .store_card .card_txt .store_txt {
+  width: 400px;
+  font-size: 1.5rem;
+}
+main.store_information .store_information .store_container .map {
+  width: 100%;
+  aspect-ratio: 9/5;
+}
+main.store_information .store_information .store_container .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+main.faq .banner {
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  position: relative;
+  background-image: url(../pic/faq_banner.png);
+  background-size: cover;
+}
+main.faq .banner .slogan {
+  position: absolute;
+  width: 1280px;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+main.faq .banner .slogan h3 {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main.faq .faq {
+  width: 100%;
+}
+main.faq .faq .title {
+  width: 100%;
+  position: relative;
+}
+main.faq .faq .title h2 {
+  color: #f27127;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
+  text-align: center;
+}
+main.faq .faq .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to left, rgba(242, 113, 39, 0) 0%, rgb(242, 113, 39) 50%, rgba(242, 113, 39, 0) 100%);
+}
+main.faq .faq .menu_phone {
+  margin-top: 20px;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+main.faq .faq .menu_phone option {
+  height: 50px;
+  font-size: 3rem;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+}
+main.faq .faq .faq_content {
+  width: 1280px;
+  min-height: 1500px;
+  margin: 0 auto;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main.faq .faq .faq_content .vertical_menu {
+  display: flex;
+  flex-direction: column;
+}
+main.faq .faq .faq_content .vertical_menu .meun_item {
+  width: 200px;
+  min-height: 60px;
+  color: #f27127;
+  border: 1px solid #f27127;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+main.faq .faq .faq_content .vertical_menu .meun_item:hover .subleaf {
+  display: block;
+}
+main.faq .faq .faq_content .vertical_menu .meun_item p {
+  padding: 10px 0;
+}
+main.faq .faq .faq_content .vertical_menu .meun_item .subleaf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  display: none;
+}
+main.faq .faq .faq_content .vertical_menu .meun_item .subleaf .subleaf_item {
+  width: 190px;
+  height: 60px;
+  border: 1px solid #f27127;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+main.faq .faq .faq_content .qa_wrap {
+  width: 995px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group {
+  display: block;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_question {
+  width: 995px;
+  min-height: 60px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_question .q {
+  width: 40px;
+  height: 40px;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_question .question {
+  font-size: 1.625rem;
+  color: #fff;
+  margin: 0 auto 0 10px;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_question .plus {
+  width: 39px;
+  height: 39px;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_answer_container {
+  width: 995px;
+  min-height: 60px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_answer_container .answer {
+  font-size: 1.625rem;
+  color: #fff;
+  margin: 0 auto 0 10px;
+}
+main.faq .faq .faq_content .qa_wrap .qa_group .faq_answer_container .answer span {
+  color: red;
+}
+body h3 {
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -741,6 +986,9 @@ main.about_us .distribution .distribution_wrap .distribution_pic img {
   }
   body h2 {
     font-size: 3.5rem;
+  }
+  body h3 {
+    font-size: 2.5rem;
   }
   main.index {
     /*商品大選單*/
@@ -1037,6 +1285,338 @@ main.about_us .distribution .distribution_wrap .distribution_pic img {
   main.index .buyers_share .buyers_share_wrap .buyers_photo10 {
     grid-area: 8/4/-1/-1;
   }
+  main.about_us {
+    /*關於我們*/
+  }
+  main.about_us .banner {
+    width: 100%;
+    aspect-ratio: 1/0.5;
+    position: relative;
+    background-image: url(../pic/banner.png);
+    background-size: cover;
+  }
+  main.about_us .banner .slogan {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+  main.about_us .banner .slogan h3 {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+    white-space: nowrap;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  main.about_us .about_us {
+    width: 100%;
+    background-image: url(../pic/about\ us.png);
+    background-size: cover;
+  }
+  main.about_us .about_us .about_us_wrap {
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  main.about_us .about_us .about_us_wrap .about_us_title {
+    text-align: end;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+  main.about_us .about_us .about_us_wrap .about_us_title_en {
+    text-align: end;
+  }
+  main.about_us .about_us .about_us_wrap .about_us_content {
+    width: 30%;
+    margin: 50px 0 0 auto;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #fff;
+  }
+  main.about_us .ideas {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main.about_us .ideas .ideas_wrap {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  main.about_us .ideas .ideas_wrap .ideas_title {
+    text-align: start;
+  }
+  main.about_us .ideas .ideas_wrap .ideas_title_en {
+    left: 0;
+    text-align: end;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_title {
+    background: #f4e900;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_title h4 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #f4e900;
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_pic {
+    width: 100%;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_pic img {
+    width: 100%;
+    vertical-align: top;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_txt {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_txt::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(244, 233, 0) 0%, rgba(244, 233, 0, 0) 100%);
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena {
+    display: flex;
+    width: 100%;
+    margin-top: 90px;
+    flex-direction: row;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_pic {
+    width: 100%;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_pic img {
+    width: 100%;
+    vertical-align: top;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    border-left: 1px solid #f4e900;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title {
+    background: #f4e900;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: -30px;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title h4 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_txt {
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    padding: 30px;
+    margin-top: auto;
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(244, 233, 0) 0%, rgba(244, 233, 0, 0) 100%);
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style {
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_title {
+    background-color: #f4e900;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_title h4 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_txt {
+    margin-bottom: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 30px;
+    color: #fff;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_pic {
+    width: 50%;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_pic img {
+    width: 100%;
+    vertical-align: top;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(244, 233, 0, 0) 0%, rgb(244, 233, 0) 100%);
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, rgba(244, 233, 0, 0) 0%, rgb(244, 233, 0) 100%);
+  }
+  main.about_us .distribution {
+    width: 100%;
+    background: #232323;
+  }
+  main.about_us .distribution .distribution_wrap {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_txt {
+    width: 70%;
+    padding: 50px;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_txt h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_txt p {
+    padding-top: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_pic {
+    width: 100%;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_pic img {
+    width: 100%;
+    vertical-align: top;
+  }
+  main.store_information .banner h3 {
+    color: rgba(255, 255, 255, 0.253);
+    font-weight: 300;
+    white-space: nowrap;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  main.store_information .store_information .title h2 {
+    color: #fff;
+    flex: 100px;
+    -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
+  }
+  main.store_information .store_information .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(243, 243, 243) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  main.store_information .store_information .store_container {
+    width: 100%;
+  }
+  main.store_information .store_information .store_container .store_card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  main.store_information .store_information .store_container .store_card .store_pic {
+    width: 50%;
+    height: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  main.store_information .store_information .store_container .store_card .store_pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  main.store_information .store_information .store_container .store_card .card_txt {
+    width: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.store_information .store_information .store_container .store_card .card_txt .store_name {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  main.store_information .store_information .store_container .store_card .card_txt .store_txt {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  main.store_information .store_information .store_container .map {
+    width: 900px;
+    height: 500px;
+    margin: 50px auto;
+  }
 }
 @media screen and (min-width: 1024px) {
   body h1 {
@@ -1044,6 +1624,9 @@ main.about_us .distribution .distribution_wrap .distribution_pic img {
   }
   body h2 {
     font-size: 5.5rem;
+  }
+  body h3 {
+    font-size: 3.5rem;
   }
   header {
     position: absolute;
@@ -1425,7 +2008,306 @@ main.about_us .distribution .distribution_wrap .distribution_pic img {
   main.index .buyers_share .buyers_share_wrap .buyers_photo10 {
     grid-area: 8/4/-1/-1;
   }
-  /*footer*/
+  main.about_us {
+    /*關於我們*/
+  }
+  main.about_us .banner {
+    width: 100%;
+    min-height: 900px;
+    position: relative;
+    background-image: url(../pic/banner.png);
+    background-size: cover;
+    background-position: center;
+  }
+  main.about_us .banner .slogan {
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+  main.about_us .banner .slogan h3 {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+    white-space: nowrap;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  main.about_us .about_us {
+    width: 100%;
+    background-image: url(../pic/about\ us.png);
+    background-size: cover;
+  }
+  main.about_us .about_us .about_us_wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 1/0.7;
+  }
+  main.about_us .about_us .about_us_wrap .about_us_title {
+    right: 200px;
+    top: 100px;
+  }
+  main.about_us .about_us .about_us_wrap .about_us_title_en {
+    top: 285px;
+    right: 100px;
+  }
+  main.about_us .about_us .about_us_wrap .about_us_content {
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 62px;
+    color: #fff;
+  }
+  main.about_us .ideas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main.about_us .ideas .ideas_wrap {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .ideas_title {
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .ideas_title_en {
+    position: relative;
+    left: 0;
+    text-align: end;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_title {
+    padding: 80px 10px;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_title h4 {
+    font-size: 3.75rem;
+    font-weight: 500;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_txt {
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  main.about_us .ideas .ideas_wrap .social_contact .social_contact_content .social_contact_txt::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(244, 233, 0) 0%, rgba(244, 233, 0, 0) 100%);
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena {
+    display: flex;
+    margin-top: 90px;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    border-left: 1px solid #f4e900;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title {
+    font-size: 3.75rem;
+    font-weight: 500;
+    padding: 80px 10px;
+    margin-top: 70px;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_txt {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 65px;
+    font-weight: 400;
+    margin-top: auto;
+    padding: 80px 20px;
+  }
+  main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(244, 233, 0) 0%, rgba(244, 233, 0, 0) 100%);
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style {
+    margin-top: 162px;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content {
+    width: 40%;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_title {
+    background-color: #f4e900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 80px 10px;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_title h4 {
+    font-size: 3.75rem;
+    font-weight: 500;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_content .exclusive_style_txt {
+    margin-top: auto;
+    font-size: 1.8rem;
+    line-height: 65px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_pic {
+    width: 60%;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style .exclusive_style_pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(244, 233, 0, 0) 0%, rgb(244, 233, 0) 100%);
+  }
+  main.about_us .ideas .ideas_wrap .exclusive_style::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, rgba(244, 233, 0, 0) 0%, rgb(244, 233, 0) 100%);
+  }
+  main.about_us .distribution {
+    width: 100%;
+    background: #232323;
+  }
+  main.about_us .distribution .distribution_wrap {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_txt {
+    width: 900px;
+    padding: 50px;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_txt h1 {
+    text-align: center;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_txt p {
+    color: #fff;
+    font-size: 1.625rem;
+    line-height: 50px;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_pic {
+    width: 100%;
+    height: 600px;
+    vertical-align: top;
+  }
+  main.about_us .distribution .distribution_wrap .distribution_pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  main.store_information .banner {
+    height: 1200px;
+  }
+  main.store_information .banner h3 {
+    color: rgba(255, 255, 255, 0.253);
+    font-weight: 300;
+    white-space: nowrap;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  main.store_information .store_information {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main.store_information .store_information .title h2 {
+    color: #fff;
+    flex: 100px;
+    -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
+  }
+  main.store_information .store_information .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(243, 243, 243) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  main.store_information .store_information .store_container {
+    width: 100%;
+  }
+  main.store_information .store_information .store_container .store_card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  main.store_information .store_information .store_container .store_card .store_pic {
+    width: 50%;
+    height: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  main.store_information .store_information .store_container .store_card .store_pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  main.store_information .store_information .store_container .store_card .card_txt {
+    width: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  main.store_information .store_information .store_container .store_card .card_txt .store_name {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  main.store_information .store_information .store_container .store_card .card_txt .store_txt {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  main.store_information .store_information .store_container .map {
+    width: 100%;
+    height: 500px;
+    margin: 50px auto;
+  }
+  main.store_information .store_information .store_container:nth-child(2) .store_card .card_txt {
+    order: -1;
+  }
   footer {
     width: 100%;
     background-color: #f27127;
@@ -1511,149 +2393,6 @@ button.gotop:hover .svg_icon path {
 }
 
 /*首頁*/
-main.faq .banner {
-  width: 100%;
-  height: 1264px;
-  position: relative;
-  background-image: url(../pic/faq_banner.png);
-  background-size: cover;
-}
-main.faq .banner .slogan {
-  position: absolute;
-  width: 1280px;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
-}
-main.faq .banner .slogan h3 {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 4.6875rem;
-  font-weight: 300;
-  white-space: nowrap;
-  text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-main.faq .faq {
-  width: 100%;
-}
-main.faq .faq .title {
-  width: 100%;
-  position: relative;
-}
-main.faq .faq .title h2 {
-  font-size: 6.25rem;
-  color: #f27127;
-  -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
-  text-align: center;
-}
-main.faq .faq .title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 2px;
-  background-image: linear-gradient(to left, rgba(242, 113, 39, 0) 0%, rgb(242, 113, 39) 50%, rgba(242, 113, 39, 0) 100%);
-}
-main.faq .faq .faq_content {
-  width: 1280px;
-  min-height: 1500px;
-  margin: 0 auto;
-  padding: 50px 10px;
-  display: flex;
-  justify-content: space-between;
-}
-main.faq .faq .faq_content .vertical_menu {
-  display: flex;
-  flex-direction: column;
-}
-main.faq .faq .faq_content .vertical_menu .meun_item {
-  width: 200px;
-  min-height: 60px;
-  color: #f27127;
-  border: 1px solid #f27127;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  font-size: 1.25rem;
-}
-main.faq .faq .faq_content .vertical_menu .meun_item:hover .subleaf {
-  display: block;
-}
-main.faq .faq .faq_content .vertical_menu .meun_item p {
-  padding: 10px 0;
-}
-main.faq .faq .faq_content .vertical_menu .meun_item .subleaf {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5px;
-  display: none;
-}
-main.faq .faq .faq_content .vertical_menu .meun_item .subleaf .subleaf_item {
-  width: 190px;
-  height: 60px;
-  border: 1px solid #f27127;
-  border-radius: 5px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
-}
-main.faq .faq .faq_content .qa_wrap {
-  width: 995px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group {
-  display: block;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_question {
-  width: 995px;
-  min-height: 60px;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #fff;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_question .q {
-  width: 40px;
-  height: 40px;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_question .question {
-  font-size: 1.625rem;
-  color: #fff;
-  margin: 0 auto 0 10px;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_question .plus {
-  width: 39px;
-  height: 39px;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_answer_container {
-  width: 995px;
-  min-height: 60px;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  display: flex;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_answer_container .answer {
-  font-size: 1.625rem;
-  color: #fff;
-  margin: 0 auto 0 10px;
-}
-main.faq .faq .faq_content .qa_wrap .qa_group .faq_answer_container .answer span {
-  color: red;
-}
 main.product_list {
   background-image: url(../pic/子彈背景圖.png);
   background-size: cover;
@@ -1833,95 +2572,6 @@ main.product_list .list_product_wrap .sidebar .sidebar_project a p {
   color: #f27127;
 }
 
-main.store_information .banner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 1264px;
-  background-image: url(../pic/store_banner.png);
-  background-size: cover;
-  position: relative;
-}
-main.store_information .banner .slogan {
-  position: absolute;
-  width: 1280px;
-  left: 50%;
-  bottom: 20%;
-  transform: translate(-50%, -50%);
-}
-main.store_information .banner h3 {
-  color: rgba(255, 255, 255, 0.253);
-  font-size: 4.6875rem;
-  font-weight: 300;
-  white-space: nowrap;
-  text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-main.store_information .store_information .title {
-  width: 1280px;
-  text-align: center;
-  margin: 50px auto;
-  position: relative;
-}
-main.store_information .store_information .title h2 {
-  color: #fff;
-  flex: 100px;
-  -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
-}
-main.store_information .store_information .title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 2px;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(243, 243, 243) 50%, rgba(255, 255, 255, 0) 100%);
-}
-main.store_information .store_information .store_container {
-  width: 1064px;
-  margin: 0 auto 120px;
-  display: flex;
-  flex-direction: column;
-}
-main.store_information .store_information .store_container .store_card {
-  display: flex;
-}
-main.store_information .store_information .store_container .store_card .store_pic {
-  width: 40%;
-  height: 320px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-main.store_information .store_information .store_container .store_card .store_pic img {
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-}
-main.store_information .store_information .store_container .store_card .card_txt {
-  width: 60%;
-  height: 320px;
-  padding: 10px 150px 10px 10px;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main.store_information .store_information .store_container .store_card .card_txt .store_name {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 50px;
-}
-main.store_information .store_information .store_container .store_card .card_txt .store_txt {
-  width: 400px;
-  font-size: 1.875rem;
-}
-main.store_information .store_information .store_container .map {
-  width: 900px;
-  height: 500px;
-  margin: 50px auto;
-}
 main.product_homepage .banner {
   width: 100%;
   height: 1200px;
@@ -2161,7 +2811,6 @@ main.form_page .banner .slogan {
 }
 main.form_page .banner .slogan h3 {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 4.6875rem;
   font-weight: 300;
   white-space: nowrap;
   text-align: center;
