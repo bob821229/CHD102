@@ -774,7 +774,7 @@ main.faq {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-bottom: 10px;
+          mafaq_answer_containerrgin-bottom: 10px;
           font-size: 1.25rem;
           &:hover .subleaf {
             display: block;
@@ -1065,6 +1065,7 @@ main.product_list {
         align-items: center;
         padding: 5px 10px;
         background-color: #0000;
+        cursor: pointer;
         a {
           p {
             font-size: 1.625rem;
@@ -1169,6 +1170,7 @@ main.form_page {
           justify-content: center;
           align-items: center;
           border-radius: 5px;
+          cursor: pointer;
         }
       }
       .form_group1 {
@@ -2602,7 +2604,6 @@ footer {
               }
             }
             .faq_answer_container {
-              min-height: 60px;
               padding: 5px 10px;
               box-sizing: border-box;
               display: flex;
@@ -2797,6 +2798,7 @@ footer {
           align-items: center;
           padding: 5px 10px;
           background-color: #0000;
+          cursor: pointer;
           a {
             p {
               font-size: 1.625rem;
@@ -2831,7 +2833,7 @@ footer {
     }
     .form {
       width: 100%;
-      min-height: 2000px;
+      min-height: 1000px;
       background-image: url(../pic/子彈背景圖.png);
       background-size: cover;
       .form_wrap {
@@ -2949,7 +2951,7 @@ footer {
         }
         .form_group2 {
           width: 90%;
-          max-width: 800px;
+          max-width: 750px;
           border: 2px solid #f27127;
           border-radius: 5px;
           padding: 20px;
@@ -3018,7 +3020,7 @@ footer {
         }
         .form_group3 {
           width: 90%;
-          max-width: 800px;
+          max-width: 750px;
           border: 2px solid #f27127;
           border-radius: 5px;
           padding: 20px;
@@ -4272,7 +4274,6 @@ footer {
             }
             .faq_answer_container {
               width: 100%;
-              min-height: 60px;
               padding: 5px 10px;
               box-sizing: border-box;
               display: flex;
