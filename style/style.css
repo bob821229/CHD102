@@ -1363,7 +1363,6 @@ main.product_homepage .banner .product_theme .product_item .pro_btn button:hover
 }
 main.product_homepage .pro_main_pic {
   width: 100%;
-  aspect-ratio: 1/0.5;
   background-image: url(../pic/dd橫幅\ 1.png);
   background-size: cover;
   padding: 10px 0;
@@ -1379,8 +1378,8 @@ main.product_homepage .pro_main_pic .pro_specification {
 }
 main.product_homepage .pro_main_pic .pro_specification .pro_txt {
   width: 100%;
-  margin-right: auto;
   margin-left: 15px;
+  gap: 5px;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
@@ -1388,6 +1387,9 @@ main.product_homepage .pro_main_pic .pro_specification .pro_txt {
   color: #fff;
   justify-content: space-between;
   font-size: 1rem;
+  position: relative;
+  left: -100%;
+  transition: left 2s;
 }
 main.product_homepage .pro_main_pic .pro_specification .pro_txt li {
   list-style: disc;
@@ -2866,11 +2868,14 @@ footer .footer_wrap .footer_copyright {
   }
   main.product_homepage .pro_main_pic {
     width: 100%;
-    aspect-ratio: 1/0.5;
     background-image: url(../pic/dd橫幅\ 1.png);
     background-size: cover;
     padding: 0 10px;
     box-sizing: border-box;
+  }
+  main.product_homepage .pro_main_pic .pro_specification .pro_txt {
+    gap: 5px;
+    min-height: 100%;
   }
   main.product_homepage .pro_main_pic .pro_specification .pro_txt li {
     font-size: 1.5rem;
@@ -4119,7 +4124,6 @@ footer .footer_wrap .footer_copyright {
   }
   main.product_homepage .pro_main_pic {
     width: 100%;
-    aspect-ratio: 1/0.5;
     background-image: url(../pic/dd橫幅\ 1.png);
     background-size: cover;
     padding: 0 10px;
@@ -4129,6 +4133,10 @@ footer .footer_wrap .footer_copyright {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+  main.product_homepage .pro_main_pic .pro_specification .pro_txt {
+    gap: 20px;
+    min-height: 100%;
   }
   main.product_homepage .pro_main_pic .pro_specification .pro_txt li {
     font-size: 1.5rem;

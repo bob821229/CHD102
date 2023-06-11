@@ -1520,7 +1520,6 @@ main.product_homepage {
   }
   .pro_main_pic {
     width: 100%;
-    aspect-ratio: 1/.5;
     background-image: url(../pic/dd橫幅\ 1.png);
     background-size: cover;
     padding:10px 0;
@@ -1540,8 +1539,8 @@ main.product_homepage {
       }
       .pro_txt {
         width: 100%;
-        margin-right: auto;
         margin-left: 15px;
+        gap: 5px;
         padding: 10px;
         box-sizing: border-box;
         display: flex;
@@ -1549,6 +1548,9 @@ main.product_homepage {
         color: #fff;
         justify-content:space-between;
         font-size: 1rem;
+        position: relative;
+        left: -100%;
+        transition: left 2s;
         li {
           list-style: disc;
         }
@@ -3225,13 +3227,14 @@ footer {
     }
     .pro_main_pic {
       width: 100%;
-      aspect-ratio: 1/.5;
       background-image: url(../pic/dd橫幅\ 1.png);
       background-size: cover;
       padding: 0 10px;
       box-sizing: border-box;
       .pro_specification{
         .pro_txt{
+          gap: 5px;
+          min-height: 100%;
           li{
             font-size: 1.5rem;
           }
@@ -4656,7 +4659,6 @@ footer {
     }
     .pro_main_pic {
       width: 100%;
-      aspect-ratio: 1/.5;
       background-image: url(../pic/dd橫幅\ 1.png);
       background-size: cover;
       padding: 0 10px;
@@ -4666,6 +4668,8 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
         .pro_txt{
+          gap: 20px;
+          min-height: 100%;
           li{
             font-size: 1.5rem;
           }

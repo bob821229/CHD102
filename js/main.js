@@ -56,4 +56,16 @@ $(document).ready(function () {
     // 展開目前點擊的答案區域
     answerContainer.slideUp();
   });
+
+  //===================================================================//
+  //滑鼠滾動 文字滑出
+  $(window).on("scroll", function() {
+    let scrollPosition = $(this).scrollTop(); // 取得滾動的位置
+    console.log(scrollPosition)
+    // 計算要設定的 left 值
+    let  leftValue = scrollPosition > 500 ? 0 : -100;
+
+  // 更新 .pro_txt 的 left 屬性
+  $(".pro_txt").css("left", leftValue + "%");
+  });
 });
