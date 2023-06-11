@@ -79,8 +79,8 @@
     </header>
     <main class="product_list">
       <section class="list_banner">
-        <div class="main_list_wrap">
-          <a href="#">
+        <div class="main_list_wrap owl-carousel owl-theme">
+          <a href="#" class="item">
             <div class="main_list_type">
               <div class="type_pic">
                 <img src="./pic/type1.svg" alt="" />
@@ -93,7 +93,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="item">
             <div class="main_list_type">
               <div class="type_pic">
                 <img src="./pic/type2.svg" alt="" />
@@ -106,7 +106,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="item">
             <div class="main_list_type">
               <div class="type_pic">
                 <img src="./pic/type3.svg" alt="" />
@@ -119,7 +119,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="item">
             <div class="main_list_type">
               <div class="type_pic">
                 <img src="./pic/type4.svg" alt="" />
@@ -132,7 +132,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="item">
             <div class="main_list_type">
               <div class="type_pic">
                 <img src="./pic/type5.svg" alt="" />
@@ -151,6 +151,13 @@
         <div class="list_title">
           <h2>商品列表</h2>
         </div>
+        <select class="menu_phone">
+          <option >步槍/衝鋒槍</option>
+          <option >手槍系列</option>
+          <option >霰彈槍/狙擊槍</option>
+          <option >改裝零件</option>
+          <option >戰術裝備</option>
+        </select>
         <div class="list_content">
           <div class="product_card">
             <a href="product_homepage.html">
@@ -552,5 +559,35 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
     </script>
+    <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        1024:{
+            items:5
+        }
+      },
+    });
+  </script> -->
   </body>
 </html>
