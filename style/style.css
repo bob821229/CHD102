@@ -3775,6 +3775,7 @@ footer .footer_wrap .footer_copyright {
     flex-direction: column;
     gap: 50px;
     max-width: 1000px;
+    min-height: 1000px;
   }
   main.faq .faq .faq_content .qa_wrap .qa_group {
     display: block;
@@ -4028,7 +4029,7 @@ footer .footer_wrap .footer_copyright {
   }
   main.product_homepage .banner .owl-carousel .owl-nav {
     position: absolute;
-    display: none;
+    display: flex;
     justify-content: space-between;
     top: 45%;
     left: 0;
@@ -4296,7 +4297,7 @@ footer .footer_wrap .footer_copyright {
     position: absolute;
     top: -500px;
     height: 500px;
-    background: rgba(83, 83, 83, 0.7490196078);
+    background: rgba(83, 83, 83, 0.8);
     width: 100%;
     transition: top 0.5s;
     z-index: 1;

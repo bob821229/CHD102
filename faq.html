@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>faq</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/faq.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -90,11 +92,11 @@
         
         <div class="faq_content">
           <select class="menu_phone">
-            <option >購買注意事項</option>
-            <option >配送及付款方式</option>
-            <option >退換貨及退款</option>
-            <option >會員常見問題</option>
-            <option >隱私權保護政策</option>
+            <option  class="meun_item">購買注意事項</option>
+            <option  class="meun_item">配送及付款方式</option>
+            <option  class="meun_item">退換貨及退款</option>
+            <option  class="meun_item">會員常見問題</option>
+            <option  class="meun_item">隱私權保護政策</option>
           </select>
           <div class="vertical_menu">
             <div class="meun_item">
@@ -533,8 +535,7 @@
     <script>
       
       let mybutton = document.getElementById("myBtn");
-      
-      
+    
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
@@ -549,6 +550,9 @@
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0;
       }
+      //------------------------------------------
+
           </script>
+          
   </body>
 </html>

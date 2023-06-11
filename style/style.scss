@@ -1783,16 +1783,10 @@ footer {
     .list_banner {
       width: 100%;
       max-height: 800px;
-      // aspect-ratio: 1/0.4166;
       background-image: url(../pic/bg.jpg);
       background-size: cover;
-      // position: relative;
       .main_list_wrap {
-        // max-width: 1200px;
         width: 100%;
-        // max-height: 300px;
-        // aspect-ratio: 1/0.25;
-        // position: relative;
         padding: 50px 0;
         display: flex;
         flex-direction: row;
@@ -1872,7 +1866,6 @@ footer {
             background-color: #fff;
             position: relative;
             .hot_product_pic {
-              // max-width: 968px;
               width: 100%;
               img {
                 width: 100%;
@@ -4244,6 +4237,7 @@ footer {
           flex-direction: column;
           gap: 50px;
           max-width: 1000px;
+          min-height: 1000px;
           .qa_group {
             display: block;
             line-height: normal;
@@ -4542,7 +4536,7 @@ footer {
         margin: 0 auto;
         .owl-nav {
           position: absolute;
-          display: none;
+          display:flex;
           justify-content: space-between;
           top: 45%;
           left: 0;
@@ -4852,13 +4846,12 @@ footer {
         }
       }
       .nav-menu {
-        // display: none;
         align-items: center;
         justify-content: center;
         position: absolute;
         top: -500px;
         height: 500px;
-        background: #535353bf;
+        background: rgba(83, 83, 83, 0.8);
         width: 100%;
         transition: top 0.5s;
         z-index: 1;
