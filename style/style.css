@@ -1280,6 +1280,7 @@ main.product_homepage .banner {
   background-image: url(../pic/bg.jpg);
   background-size: cover;
   box-sizing: border-box;
+  padding-top: 100px;
 }
 main.product_homepage .banner .owl-carousel {
   max-width: 1200px;
