@@ -37,8 +37,7 @@ body {
 
 //首頁
 main.index {
-  padding:5px;
-  box-sizing: border-box;
+  
   /*商品大選單*/
   .list_banner {
     width: 100%;
@@ -90,6 +89,8 @@ main.index {
   }
   /*熱門商品*/
   .hot_product {
+    padding:0 5px;
+  box-sizing: border-box;
     width: 100%;
     .hot_product_wrap {
       width: 100%;
@@ -283,6 +284,8 @@ main.index {
   }
   /*買家分享*/
   .buyers_share {
+    padding:0 5px;
+  box-sizing: border-box;
     width: 100%;
     .buyers_share_title {
       text-align: center;
@@ -303,8 +306,6 @@ main.index {
 }
 //關於我們
 main.about_us {
-  padding:5px;
-  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/0.5;
@@ -591,8 +592,6 @@ main.about_us {
 }
 //商店資訊
 main.store_information {
-  padding:5px;
-  box-sizing: border-box;
   .banner {
     display: flex;
     flex-direction: column;
@@ -696,8 +695,6 @@ main.store_information {
 }
 //faq
 main.faq {
-  padding:5px;
-  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/0.5;
@@ -891,8 +888,6 @@ main.faq {
 }
 //商品列表頁
 main.product_list {
-  padding:5px;
-  box-sizing: border-box;
   background-image: url(../pic/子彈背景圖.png);
   background-size: cover;
   background-position: center;
@@ -1091,8 +1086,6 @@ main.product_list {
 }
 //會員中心
 main.form_page {
-  padding:5px;
-  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/0.7;
@@ -1393,8 +1386,6 @@ main.form_page {
 }
 //商品主頁
 main.product_homepage {
-  padding:5px;
-  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/.7;
