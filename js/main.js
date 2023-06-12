@@ -63,9 +63,17 @@ $(document).ready(function () {
     let scrollPosition = $(this).scrollTop(); // 取得滾動的位置
     console.log(scrollPosition)
     // 計算要設定的 left 值
-    let  leftValue = scrollPosition > 500 ? 0 : -100;
+    
 
-  // 更新 .pro_txt 的 left 屬性
+    if (jQuery(window).width() > 768){
+      let  leftValue = scrollPosition > 500 ? 0 : -100;
+      // 更新 .pro_txt 的 left 屬性
   $(".pro_txt").css("left", leftValue + "%");
+    }if (jQuery(window).width() < 768){
+      let  leftValue = scrollPosition > 10 ? 0 : -100;
+          // 更新 .pro_txt 的 left 屬性
+  $(".pro_txt").css("left", leftValue + "%");
+    }
+  
   });
 });

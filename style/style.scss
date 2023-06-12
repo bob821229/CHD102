@@ -37,6 +37,8 @@ body {
 
 //首頁
 main.index {
+  padding:5px;
+  box-sizing: border-box;
   /*商品大選單*/
   .list_banner {
     width: 100%;
@@ -221,6 +223,7 @@ main.index {
         font-size: 1rem;
         line-height: 30px;
         color: #fff;
+        text-align: justify;
       }
     }
   }
@@ -300,6 +303,8 @@ main.index {
 }
 //關於我們
 main.about_us {
+  padding:5px;
+  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/0.5;
@@ -353,9 +358,9 @@ main.about_us {
   .ideas {
     padding-top: 30px;
     width: 100%;
-    // height: 3000px;
     display: flex;
     justify-content: center;
+    text-align: justify;
     .ideas_wrap {
       max-width: 1200px;
       width: 100%;
@@ -586,6 +591,8 @@ main.about_us {
 }
 //商店資訊
 main.store_information {
+  padding:5px;
+  box-sizing: border-box;
   .banner {
     display: flex;
     flex-direction: column;
@@ -689,6 +696,8 @@ main.store_information {
 }
 //faq
 main.faq {
+  padding:5px;
+  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/0.5;
@@ -812,6 +821,7 @@ main.faq {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        min-height: 165px;
         .qa_group {
           display: block;
           line-height: normal;
@@ -850,6 +860,7 @@ main.faq {
             padding: 5px 10px;
             box-sizing: border-box;
             display: flex;
+            text-align: justify;
             .a {
               img {
                 width: 30px;
@@ -880,6 +891,8 @@ main.faq {
 }
 //商品列表頁
 main.product_list {
+  padding:5px;
+  box-sizing: border-box;
   background-image: url(../pic/子彈背景圖.png);
   background-size: cover;
   background-position: center;
@@ -1078,6 +1091,8 @@ main.product_list {
 }
 //會員中心
 main.form_page {
+  padding:5px;
+  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/0.7;
@@ -1378,6 +1393,8 @@ main.form_page {
 }
 //商品主頁
 main.product_homepage {
+  padding:5px;
+  box-sizing: border-box;
   .banner {
     width: 100%;
     aspect-ratio: 1/.7;
@@ -1549,7 +1566,6 @@ main.product_homepage {
         justify-content:space-between;
         font-size: 1rem;
         position: relative;
-        left: -100%;
         transition: left 2s;
         li {
           list-style: disc;
@@ -1577,6 +1593,7 @@ main.product_homepage {
     .related_menu_wrap {
       width: 100%;
       margin: 50px auto;
+      position: relative;
       .related_title {
         text-align: center;
         font-size: 3rem;
@@ -1599,64 +1616,38 @@ main.product_homepage {
           rgba(255, 255, 255, 0) 100%
         );
       }
-      .owl-carousel2 {
+      .swiper{
         width: 100%;
-        margin: 50px auto 0px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        justify-content: space-between;
-        gap: 10px;
-        .item {
-          width: 90%;
-          margin: 0 auto;
-          .pro_pic {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      .swiper-wrapper{
+        .swiper-slide{
+          background-position: center;
+         background-size: cover;
+         width: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .pro_pic{
             width: 100%;
-            aspect-ratio: 1/.5;
-            position: relative;
-            img {
-              width: 100%;
-              height: 100%;
-              vertical-align:top;
+            img{
+              display: block;
+        width: 100%;
             }
           }
-          .pro_name {
-            width: 100%;
-            font-size: 1rem;
+          .pro_name{
+            font-size: 1.5rem;
             text-align: center;
-            font-weight: 500;
-            position: relative;
-            box-sizing: border-box;
-            padding-top: 10px;
-            flex-grow: 1;
-            p {
-              display: block;
-              flex-grow: 1;
-              margin-bottom: auto;
+            p{}
+            span{
+              color: #aaa;
             }
-            span {
-              margin-top: auto;
-              display: block;
-              color: #888;
-            }
-          }
-          .pro_name:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            transform: translateX(-50%);
-            width: 90%;
-            height: 2px;
-            background-image: linear-gradient(
-              to left,
-              rgba(248, 248, 248, 0) 0%,
-              rgb(0, 0, 0) 50%,
-              rgba(255, 255, 255, 0) 100%
-            );
           }
         }
       }
     }
+    }
+    
   }
 }
 /*至頂按鈕*/
@@ -1781,6 +1772,7 @@ footer {
     height: 50px;
   }
   main.index {
+    padding: 0;
     /*商品大選單*/
     .list_banner {
       width: 100%;
@@ -2084,6 +2076,7 @@ footer {
     }
   }
   main.about_us {
+    padding: 0;
     .banner {
       width: 100%;
       aspect-ratio: 1/0.5;
@@ -2380,6 +2373,7 @@ footer {
     }
   }
   main.store_information {
+    padding: 0;
     .banner {
       .slogan {
       }
@@ -2465,6 +2459,7 @@ footer {
     }
   }
   main.faq {
+    padding: 0;
     .banner {
       width: 100%;
       aspect-ratio: 1/0.5;
@@ -2638,6 +2633,7 @@ footer {
     }
   }
   main.product_list {
+    padding: 0;
     /*商品大選單*/
     .list_banner {
       width: 100%;
@@ -2811,6 +2807,7 @@ footer {
   }
   //會員中心
   main.form_page {
+    padding: 0;
     .banner {
       width: 100%;
       aspect-ratio: 1/0.7;
@@ -3088,6 +3085,7 @@ footer {
   }
   //商品主頁
   main.product_homepage {
+    padding: 0;
     .banner {
       width: 100%;
       aspect-ratio: 1/.7;
@@ -3342,6 +3340,7 @@ footer {
     }
   }
 }
+
 //-------------------------------------------------------------------------------------
 //桌機
 @media screen and (min-width: 1024px) {
@@ -4785,8 +4784,7 @@ footer {
   //漢堡選單
   header {
     width: 100%;
-    height: 70px;
-    position: relative;
+    // position: relative;
     #menu-switch {
       display: none;
       &:checked + .navbar .hb span:nth-child(1) {

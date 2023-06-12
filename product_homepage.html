@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./js/main.js"></script>
-
+       
+ 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -33,7 +34,6 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="css/product_homepage.css" />
-    <link rel="stylesheet" href="./css/generic.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -42,6 +42,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style/style.css" />
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+   />
   </head>
   <body>
     <header>
@@ -184,36 +189,93 @@
           <div class="related_title">
             <h4>RELATED GUNS</h4>
           </div>
-          <div class="owl-carousel2">
-            <div class="item">
-              <div class="pro_pic">
-                <img src="pic/pdw9.png" alt="" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/pdw9.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p>CXP-MARS PDW9</p>
+                  <span>CXP-MARS PDW9</span>
+                </div>
               </div>
-              <div class="pro_name">
-                <p>CXP-MARS PDW9</p>
-                <span>CXP-MARS PDW9</span>
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/sbr.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p> CXP-MARS SBR MTR Stock</p>
+                  <span>CXP-MARS</span>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="pro_pic">
-                <img src="pic/mars.png" alt="" />
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/pdw9.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p>CXP-MARS PDW9</p>
+                  <span>CXP-MARS PDW9</span>
+                </div>
               </div>
-              <div class="pro_name">
-                <p>【Discontinued】CXP-MARS Carbine MTR Stock</p>
-                <span>CXP-MARS</span>
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/mars.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p> CXP-MARS Carbine MTR Stock</p>
+                  <span>CXP-MARS</span>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="pro_pic">
-                <img src="pic/sbr.png" alt="" />
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/sbr.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p> CXP-MARS SBR MTR Stock</p>
+                  <span>CXP-MARS</span>
+                </div>
               </div>
-              <div class="pro_name">
-                <p>【Discontinued】CXP-MARS SBR MTR Stock</p>
-                <span>CXP-MARS</span>
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/sbr.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p> CXP-MARS SBR MTR Stock</p>
+                  <span>CXP-MARS</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/sbr.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p> CXP-MARS SBR MTR Stock</p>
+                  <span>CXP-MARS</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/sbr.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p> CXP-MARS SBR MTR Stock</p>
+                  <span>CXP-MARS</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro_pic">
+                  <img src="pic/pdw9.png" alt="" />
+                </div>
+                <div class="pro_name">
+                  <p>CXP-MARS PDW9</p>
+                  <span>CXP-MARS PDW9</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+    
       </section>
     </main>
 
@@ -337,5 +399,29 @@
         },
       });
     </script>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         effect: "coverflow",
+         grabCursor: true,
+         centeredSlides: true,
+         slidesPerView: "auto",
+         coverflowEffect: {
+           rotate: 50,
+           stretch: 0,
+           depth: 100,
+           modifier: 1,
+           slideShadows: true,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+         },
+       });
+     </script>
+
+   
   </body>
 </html>
