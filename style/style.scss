@@ -224,7 +224,7 @@ main.index {
         margin: 50px 0 0 auto;
         font-weight: 400;
         font-size: 1rem;
-        line-height: 30px;
+        line-height: 20px;
         color: #fff;
         text-align: justify;
       }
@@ -387,8 +387,9 @@ main.about_us {
         margin: 50px 0 0 auto;
         font-weight: 400;
         font-size: 1rem;
-        line-height: 30px;
+        line-height: 20px;
         color: #fff;
+        text-align: justify;
       }
     }
   }
@@ -490,6 +491,7 @@ main.about_us {
           justify-content: end;
           position: relative;
           border-left: 1px solid #f4e900;
+          order: -1;
           .tactical_arena_title {
             background: #f4e900;
             width: 100%;
@@ -2349,6 +2351,7 @@ footer {
             justify-content: flex-start;
             position: relative;
             border-left: 1px solid #f4e900;
+            order: 0;
             .tactical_arena_title {
               background: #f4e900;
               width: 70%;

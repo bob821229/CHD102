@@ -216,7 +216,7 @@ main.index .about_us .about_us_wrap .about_us_content {
   margin: 50px 0 0 auto;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 20px;
   color: #fff;
   text-align: justify;
 }
@@ -373,8 +373,9 @@ main.about_us .about_us .about_us_wrap .about_us_content {
   margin: 50px 0 0 auto;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 20px;
   color: #fff;
+  text-align: justify;
 }
 main.about_us .ideas {
   padding-top: 30px;
@@ -467,6 +468,7 @@ main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content {
   justify-content: end;
   position: relative;
   border-left: 1px solid #f4e900;
+  order: -1;
 }
 main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title {
   background: #f4e900;
@@ -2157,6 +2159,7 @@ footer .footer_wrap .footer_copyright {
     justify-content: flex-start;
     position: relative;
     border-left: 1px solid #f4e900;
+    order: 0;
   }
   main.about_us .ideas .ideas_wrap .tactical_arena .tactical_arena_content .tactical_arena_title {
     background: #f4e900;
