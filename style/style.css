@@ -218,7 +218,7 @@ main.index .about_us .about_us_wrap .about_us_content {
   font-size: 1rem;
   line-height: 20px;
   color: #fff;
-  text-align: justify;
+  text-align: start;
 }
 main.index .store {
   width: 100%;
@@ -375,7 +375,7 @@ main.about_us .about_us .about_us_wrap .about_us_content {
   font-size: 1rem;
   line-height: 20px;
   color: #fff;
-  text-align: justify;
+  text-align: start;
 }
 main.about_us .ideas {
   padding-top: 30px;
