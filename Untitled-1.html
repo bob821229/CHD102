@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color:#aaa;
+            font-size: 1.2rem;
+            position: relative;
+        }
+        h3::after{
+           content: 'Real battlefield ultimate experience';
+           color: yellow;
+           position: absolute;
+           left: 0;
+           top: 0;
+           clip-path: ellipse(100px 100px at 0% 50%);
+           -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+           animation:spotlight 5s infinite;
+        }
+        @keyframes spotlight{
+            0%{
+                clip-path: ellipse(100px 100px at 0% 50%);
+           -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+            }
+            50%{
+                clip-path: ellipse(100px 100px at 100% 50%);
+           -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+            }
+            100%{
+                clip-path: ellipse(100px 100px at 0% 50%);
+           -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+    </h3>
+</body>
+</html>

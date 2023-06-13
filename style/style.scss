@@ -218,6 +218,8 @@ main.index {
         text-align: end;
       }
       .about_us_content {
+        box-sizing: border-box;
+        padding-right: 20px;
         width: 30%;
         margin: 50px 0 0 auto;
         font-weight: 400;
@@ -306,25 +308,58 @@ main.index {
 }
 //關於我們
 main.about_us {
+  margin-top: 70px;
   .banner {
     width: 100%;
-    aspect-ratio: 1/0.5;
     position: relative;
     background-image: url(../pic/banner.png);
     background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/0.7;
     .slogan {
       position: absolute;
       width: 100%;
       left: 50%;
       top: 55%;
       transform: translate(-50%, -50%);
-      h3 {
-        color: rgba(255, 255, 255, 0.4);
+      text-align: center;
+        color:#aaa;
+        font-size: 1.2rem;
+      h3{
         font-weight: 300;
         white-space: nowrap;
         text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+        color:#aaa;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+    }
+    h3::after{
+       content: 'Real battlefield ultimate experience';
+       color: #fff;
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+       animation:spotlight 7s infinite;
+       margin: 0 auto;
+    }
+    @keyframes spotlight{
+        0%{
+            clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+        }
+        50%{
+            clip-path: ellipse(50px 50px at 100% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+        }
+        100%{
+            clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+        }
+    }
     }
   }
   /*關於我們*/
@@ -347,6 +382,7 @@ main.about_us {
         text-align: end;
       }
       .about_us_content {
+        padding-right: 20px;
         width: 30%;
         margin: 50px 0 0 auto;
         font-weight: 400;
@@ -592,29 +628,64 @@ main.about_us {
 }
 //商店資訊
 main.store_information {
+  margin-top: 70px;
   .banner {
     display: flex;
     flex-direction: column;
     width: 100%;
-    aspect-ratio: 1/0.5;
+    aspect-ratio: 1/0.7;
     background-image: url(../pic/store_banner.png);
     background-size: cover;
     background-position: center;
     position: relative;
+    
     .slogan {
       position: absolute;
       width: 100%;
       left: 50%;
       bottom: 20%;
       transform: translate(-50%, -50%);
-    }
-    h3 {
-      color: rgba(255, 255, 255, 0.253);
       font-weight: 300;
       white-space: nowrap;
       text-align: center;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color:#aaa;
+      font-size: 1.2rem;
     }
+    h3{
+      font-weight: 300;
+      white-space: nowrap;
+      text-align: center;
+      color:#aaa;
+      font-size: 1.2rem;
+      position: relative;
+      text-align: center;
+  }
+  h3::after{
+     content: 'Challenge the limits exceed yourself';
+     color: #fff;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     clip-path: ellipse(50px 50px at 0% 50%);
+     -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+     animation:spotlight 7s infinite;
+     margin: 0 auto;
+  }
+  @keyframes spotlight{
+      0%{
+          clip-path: ellipse(50px 50px at 0% 50%);
+     -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+      }
+      50%{
+          clip-path: ellipse(50px 50px at 100% 50%);
+     -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+      }
+      100%{
+          clip-path: ellipse(50px 50px at 0% 50%);
+     -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+      }
+  }
   }
 
   .store_information {
@@ -695,24 +766,57 @@ main.store_information {
 }
 //faq
 main.faq {
+  margin-top: 70px;
   .banner {
     width: 100%;
-    aspect-ratio: 1/0.5;
     position: relative;
     background-image: url(../pic/faq_banner.png);
     background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/0.7;
     .slogan {
       position: absolute;
       left: 50%;
       top: 55%;
       transform: translate(-50%, -50%);
-      h3 {
-        color: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      color:#aaa;
+      font-size: 1.2rem;
+      h3{
         font-weight: 300;
         white-space: nowrap;
         text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+        color:#aaa;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+    }
+    h3::after{
+       content: 'Exquisite craftsmanship unparalleled';
+       color: #fff;
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+       animation:spotlight 7s infinite;
+       margin: 0 auto;
+    }
+    @keyframes spotlight{
+        0%{
+            clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+        }
+        50%{
+            clip-path: ellipse(50px 50px at 100% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+        }
+        100%{
+            clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+        }
+    }
     }
   }
   .faq {
@@ -818,7 +922,7 @@ main.faq {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        min-height: 165px;
+        min-height: 220px;
         .qa_group {
           display: block;
           line-height: normal;
@@ -1086,24 +1190,57 @@ main.product_list {
 }
 //會員中心
 main.form_page {
+  margin-top: 70px;
   .banner {
     width: 100%;
-    aspect-ratio: 1/0.7;
     background-image: url(../pic/form_banner.png);
     background-size: cover;
     position: relative;
+    // background-position-y: 80px;
+    aspect-ratio: 1/.7;
     .slogan {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      h3 {
-        color: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      color:#aaa;
+      font-size: 1.2rem;
+      h3{
         font-weight: 300;
         white-space: nowrap;
         text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+        color:#aaa;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+    }
+    h3::after{
+       content: 'Tactical competition professional quality';
+       color: #fff;
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+       animation:spotlight 7s infinite;
+       margin: 0 auto;
+    }
+    @keyframes spotlight{
+        0%{
+            clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+        }
+        50%{
+            clip-path: ellipse(50px 50px at 100% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+        }
+        100%{
+            clip-path: ellipse(50px 50px at 0% 50%);
+       -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+        }
+    }
     }
   }
   .form {
@@ -1628,7 +1765,7 @@ main.product_homepage {
             }
           }
           .pro_name{
-            font-size: 1.5rem;
+            font-size: 1rem;
             text-align: center;
             p{}
             span{
@@ -1958,6 +2095,7 @@ footer {
           font-size: 1.5rem;
           line-height: 30px;
           color: #fff;
+          padding-right: 20px;
         }
       }
     }
@@ -2068,6 +2206,7 @@ footer {
     }
   }
   main.about_us {
+    margin-top: 0px;
     padding: 0;
     .banner {
       width: 100%;
@@ -2076,17 +2215,9 @@ footer {
       background-image: url(../pic/banner.png);
       background-size: cover;
       .slogan {
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        top: 55%;
-        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
         h3 {
-          color: rgba(255, 255, 255, 0.4);
-          font-weight: 300;
-          white-space: nowrap;
-          text-align: center;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          font-size: 2.5rem;
         }
       }
     }
@@ -2365,16 +2496,14 @@ footer {
     }
   }
   main.store_information {
+    margin-top: 0px;
     padding: 0;
     .banner {
       .slogan {
+        font-size: 2.5rem;
       }
       h3 {
-        color: rgba(255, 255, 255, 0.253);
-        font-weight: 300;
-        white-space: nowrap;
-        text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 2.5rem;
       }
     }
 
@@ -2451,6 +2580,7 @@ footer {
     }
   }
   main.faq {
+    margin-top: 0px;
     padding: 0;
     .banner {
       width: 100%;
@@ -2459,16 +2589,9 @@ footer {
       background-image: url(../pic/faq_banner.png);
       background-size: cover;
       .slogan {
-        position: absolute;
-        left: 50%;
-        top: 55%;
-        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
         h3 {
-          color: rgba(255, 255, 255, 0.4);
-          font-weight: 300;
-          white-space: nowrap;
-          text-align: center;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          font-size: 2.5rem;
         }
       }
     }
@@ -2799,6 +2922,7 @@ footer {
   }
   //會員中心
   main.form_page {
+    margin-top: 0px;
     padding: 0;
     .banner {
       width: 100%;
@@ -2807,16 +2931,9 @@ footer {
       background-size: cover;
       position: relative;
       .slogan {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
         h3 {
-          color: rgba(255, 255, 255, 0.4);
-          font-weight: 300;
-          white-space: nowrap;
-          text-align: center;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          font-size: 2.5rem;
         }
       }
     }
@@ -3271,63 +3388,36 @@ footer {
             rgba(255, 255, 255, 0) 100%
           );
         }
-        .owl-carousel2 {
+        .swiper{
           width: 100%;
-          margin: 50px auto 0px;
-          display: flex;
-          flex-direction:row;
-          position: relative;
-          justify-content: space-between;
-          gap: 10px;
-          .item {
-            width: 90%;
-            margin: 0 auto;
-            .pro_pic {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        .swiper-wrapper{
+          .swiper-slide{
+            background-position: center;
+           background-size: cover;
+           width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .pro_pic{
               width: 100%;
-              aspect-ratio: 1/.5;
-              position: relative;
-              img {
-                width: 100%;
-                height: 100%;
-                vertical-align:top;
+              img{
+                display: block;
+          width: 100%;
               }
             }
-            .pro_name {
-              width: 100%;
+            .pro_name{
               font-size: 1.5rem;
               text-align: center;
-              font-weight: 500;
-              position: relative;
-              box-sizing: border-box;
-              padding-top: 10px;
-              flex-grow: 1;
-              p {
-                display: block;
-                flex-grow: 1;
-                margin-bottom: auto;
+              p{}
+              span{
+                color: #aaa;
               }
-              span {
-                margin-top: auto;
-                display: block;
-                color: #888;
-              }
-            }
-            .pro_name:after {
-              content: "";
-              position: absolute;
-              top: 0;
-              transform: translateX(-50%);
-              width: 90%;
-              height: 2px;
-              background-image: linear-gradient(
-                to left,
-                rgba(248, 248, 248, 0) 0%,
-                rgb(0, 0, 0) 50%,
-                rgba(255, 255, 255, 0) 100%
-              );
             }
           }
         }
+      }
       }
     }
   }
@@ -3756,12 +3846,9 @@ footer {
         left: 50%;
         top: 55%;
         transform: translate(-50%, -50%);
+        font-size: 3.5rem;
         h3 {
-          color: rgba(255, 255, 255, 0.4);
-          font-weight: 300;
-          white-space: nowrap;
-          text-align: center;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          font-size: 3.5rem;
         }
       }
     }
@@ -4008,13 +4095,10 @@ footer {
     .banner {
       height: 1200px;
       .slogan {
+        font-size: 3.5rem;
       }
       h3 {
-        color: rgba(255, 255, 255, 0.253);
-        font-weight: 300;
-        white-space: nowrap;
-        text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 3.5rem;
       }
     }
 
@@ -4109,16 +4193,9 @@ footer {
       background-image: url(../pic/faq_banner.png);
       background-size: cover;
       .slogan {
-        position: absolute;
-        left: 50%;
-        top: 55%;
-        transform: translate(-50%, -50%);
+        font-size: 3.5rem;
         h3 {
-          color: rgba(255, 255, 255, 0.4);
-          font-weight: 300;
-          white-space: nowrap;
-          text-align: center;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          font-size: 3.5rem;
         }
       }
     }
@@ -4297,13 +4374,11 @@ footer {
     /*商品大選單*/
     .list_banner {
       aspect-ratio: 1/1;
-
       .main_list_wrap {
         max-width: 1200px;
         max-height: 300px;
         position: relative;
         top: 40%;
-
         a {
           .main_list_type {
             width: 100%;
@@ -4490,7 +4565,15 @@ footer {
       }
     }
   }
-  main.form_page {
+  main.form_page { 
+    .banner {
+      .slogan {
+        font-size: 3.5rem;
+        h3 {
+          font-size: 3.5rem;
+        }
+      }
+    }
     .form {
       .form_wrap {
         .menu_phone {
@@ -4876,23 +4959,24 @@ footer {
 
         .search-form {
           position: relative;
-          width: 150px;
           height: 40px;
           display: flex;
           align-items: center;
           box-sizing: border-box;
-          gap: 5px;
           margin: 0 auto;
           .icon {
+            -webkit-text-fill-color: #aaa;
             border-style: none;
             background-color: #0000;
             cursor: pointer;
+            position: absolute;
+            right:10px;
           }
           i {
             color: #fff;
           }
           input#search {
-            width: 100px;
+            // width: 100px;
             height: 30px;
             border-radius: 10px;
             border: 1px solid #fff;

@@ -23,6 +23,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .slogan{
+        text-align: center;
+        color:#aaa;
+           font-size: 1.2rem;
+      }
+      h3{
+           color:#aaa;
+           font-size: 1.2rem;
+           position: relative;
+           text-align: center;
+       }
+       h3::after{
+          content: 'Real battlefield ultimate experience';
+          color: #fff;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          clip-path: ellipse(50px 50px at 0% 50%);
+          -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+          animation:spotlight 7s infinite;
+          margin: 0 auto;
+       }
+       @keyframes spotlight{
+           0%{
+               clip-path: ellipse(50px 50px at 0% 50%);
+          -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+           }
+           50%{
+               clip-path: ellipse(50px 50px at 100% 50%);
+          -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+           }
+           100%{
+               clip-path: ellipse(50px 50px at 0% 50%);
+          -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+           }
+       }
+   </style>
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
@@ -80,7 +119,7 @@
     <main class="about_us">
       <section class="banner">
         <div class="slogan">
-          <h3>真實戰場 極致體驗</h3>
+          真實戰場 極致體驗
           <h3>Real battlefield ultimate experience</h3>
         </div>
       </section>
@@ -119,7 +158,7 @@
               </div>
               <div class="social_contact_txt">
                 <p>
-                  致力於推廣運動的健康、文明和安全發展。公司尊重運動精神,秉承公正、公平、公開的原則，並與其他組織和愛好者共同促進
+                  致力於推廣運動的健康、文明和安全發展。公司尊重運動精神，秉承公正、公平、公開的原則，並與其他組織和愛好者共同促進
                   Airsoft 運動的發展和繁榮
                 </p>
               </div>

@@ -210,6 +210,8 @@ main.index .about_us .about_us_wrap .about_us_title_en {
   text-align: end;
 }
 main.index .about_us .about_us_wrap .about_us_content {
+  box-sizing: border-box;
+  padding-right: 20px;
   width: 30%;
   margin: 50px 0 0 auto;
   font-weight: 400;
@@ -290,14 +292,16 @@ main.index .buyers_share .buyers_share_wrap img {
 }
 
 main.about_us {
+  margin-top: 70px;
   /*關於我們*/
 }
 main.about_us .banner {
   width: 100%;
-  aspect-ratio: 1/0.5;
   position: relative;
   background-image: url(../pic/banner.png);
   background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/0.7;
 }
 main.about_us .banner .slogan {
   position: absolute;
@@ -305,13 +309,44 @@ main.about_us .banner .slogan {
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
 }
 main.about_us .banner .slogan h3 {
-  color: rgba(255, 255, 255, 0.4);
   font-weight: 300;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #aaa;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+}
+main.about_us .banner .slogan h3::after {
+  content: "Real battlefield ultimate experience";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  clip-path: ellipse(50px 50px at 0% 50%);
+  -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  animation: spotlight 7s infinite;
+  margin: 0 auto;
+}
+@keyframes spotlight {
+  0% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
+  50% {
+    clip-path: ellipse(50px 50px at 100% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
 }
 main.about_us .about_us {
   width: 100%;
@@ -333,6 +368,7 @@ main.about_us .about_us .about_us_wrap .about_us_title_en {
   text-align: end;
 }
 main.about_us .about_us .about_us_wrap .about_us_content {
+  padding-right: 20px;
   width: 30%;
   margin: 50px 0 0 auto;
   font-weight: 400;
@@ -548,11 +584,14 @@ main.about_us .distribution .distribution_wrap .distribution_pic img {
   vertical-align: top;
 }
 
+main.store_information {
+  margin-top: 70px;
+}
 main.store_information .banner {
   display: flex;
   flex-direction: column;
   width: 100%;
-  aspect-ratio: 1/0.5;
+  aspect-ratio: 1/0.7;
   background-image: url(../pic/store_banner.png);
   background-size: cover;
   background-position: center;
@@ -564,13 +603,46 @@ main.store_information .banner .slogan {
   left: 50%;
   bottom: 20%;
   transform: translate(-50%, -50%);
-}
-main.store_information .banner h3 {
-  color: rgba(255, 255, 255, 0.253);
   font-weight: 300;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #aaa;
+  font-size: 1.2rem;
+}
+main.store_information .banner h3 {
+  font-weight: 300;
+  white-space: nowrap;
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+}
+main.store_information .banner h3::after {
+  content: "Challenge the limits exceed yourself";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  clip-path: ellipse(50px 50px at 0% 50%);
+  -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  animation: spotlight 7s infinite;
+  margin: 0 auto;
+}
+@keyframes spotlight {
+  0% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
+  50% {
+    clip-path: ellipse(50px 50px at 100% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
 }
 main.store_information .store_information {
   width: 100%;
@@ -639,25 +711,60 @@ main.store_information .store_information .store_container .map iframe {
   height: 100%;
 }
 
+main.faq {
+  margin-top: 70px;
+}
 main.faq .banner {
   width: 100%;
-  aspect-ratio: 1/0.5;
   position: relative;
   background-image: url(../pic/faq_banner.png);
   background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/0.7;
 }
 main.faq .banner .slogan {
   position: absolute;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
 }
 main.faq .banner .slogan h3 {
-  color: rgba(255, 255, 255, 0.4);
   font-weight: 300;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #aaa;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+}
+main.faq .banner .slogan h3::after {
+  content: "Exquisite craftsmanship unparalleled";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  clip-path: ellipse(50px 50px at 0% 50%);
+  -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  animation: spotlight 7s infinite;
+  margin: 0 auto;
+}
+@keyframes spotlight {
+  0% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
+  50% {
+    clip-path: ellipse(50px 50px at 100% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
 }
 main.faq .faq {
   width: 100%;
@@ -754,7 +861,7 @@ main.faq .faq .faq_content .qa_wrap {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  min-height: 165px;
+  min-height: 220px;
 }
 main.faq .faq .faq_content .qa_wrap .qa_group {
   display: block;
@@ -990,25 +1097,59 @@ main.product_list .list_product_wrap .sidebar .sidebar_project a p {
   color: #f27127;
 }
 
+main.form_page {
+  margin-top: 70px;
+}
 main.form_page .banner {
   width: 100%;
-  aspect-ratio: 1/0.7;
   background-image: url(../pic/form_banner.png);
   background-size: cover;
   position: relative;
+  aspect-ratio: 1/0.7;
 }
 main.form_page .banner .slogan {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
 }
 main.form_page .banner .slogan h3 {
-  color: rgba(255, 255, 255, 0.4);
   font-weight: 300;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #aaa;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+}
+main.form_page .banner .slogan h3::after {
+  content: "Tactical competition professional quality";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  clip-path: ellipse(50px 50px at 0% 50%);
+  -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  animation: spotlight 7s infinite;
+  margin: 0 auto;
+}
+@keyframes spotlight {
+  0% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
+  50% {
+    clip-path: ellipse(50px 50px at 100% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(50px 50px at 0% 50%);
+    -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  }
 }
 main.form_page .form {
   width: 100%;
@@ -1461,7 +1602,7 @@ main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swi
   width: 100%;
 }
 main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide .pro_name {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
 }
 main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide .pro_name span {
@@ -1774,6 +1915,7 @@ footer .footer_wrap .footer_copyright {
     font-size: 1.5rem;
     line-height: 30px;
     color: #fff;
+    padding-right: 20px;
   }
   main.index .store {
     width: 100%;
@@ -1879,6 +2021,7 @@ footer .footer_wrap .footer_copyright {
     grid-area: 8/4/-1/-1;
   }
   main.about_us {
+    margin-top: 0px;
     padding: 0;
     /*關於我們*/
   }
@@ -1890,18 +2033,10 @@ footer .footer_wrap .footer_copyright {
     background-size: cover;
   }
   main.about_us .banner .slogan {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
   }
   main.about_us .banner .slogan h3 {
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.5rem;
   }
   main.about_us .about_us {
     width: 100%;
@@ -2149,14 +2284,14 @@ footer .footer_wrap .footer_copyright {
     vertical-align: top;
   }
   main.store_information {
+    margin-top: 0px;
     padding: 0;
   }
+  main.store_information .banner .slogan {
+    font-size: 2.5rem;
+  }
   main.store_information .banner h3 {
-    color: rgba(255, 255, 255, 0.253);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.5rem;
   }
   main.store_information .store_information .title h2 {
     color: #fff;
@@ -2215,6 +2350,7 @@ footer .footer_wrap .footer_copyright {
     margin: 50px auto;
   }
   main.faq {
+    margin-top: 0px;
     padding: 0;
   }
   main.faq .banner {
@@ -2225,17 +2361,10 @@ footer .footer_wrap .footer_copyright {
     background-size: cover;
   }
   main.faq .banner .slogan {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
   }
   main.faq .banner .slogan h3 {
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.5rem;
   }
   main.faq .faq .faq_content {
     max-width: 1200px;
@@ -2507,6 +2636,7 @@ footer .footer_wrap .footer_copyright {
     color: #f27127;
   }
   main.form_page {
+    margin-top: 0px;
     padding: 0;
   }
   main.form_page .banner {
@@ -2517,17 +2647,10 @@ footer .footer_wrap .footer_copyright {
     position: relative;
   }
   main.form_page .banner .slogan {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
   }
   main.form_page .banner .slogan h3 {
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.5rem;
   }
   main.form_page .form {
     width: 100%;
@@ -2914,57 +3037,32 @@ footer .footer_wrap .footer_copyright {
     height: 2px;
     background-image: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
   }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 {
+  main.product_homepage .down_wrap .related_menu_wrap .swiper {
     width: 100%;
-    margin: 50px auto 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 30%;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-between;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item {
-    width: 90%;
-    margin: 0 auto;
-  }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item .pro_pic {
+  main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide .pro_pic {
     width: 100%;
-    aspect-ratio: 1/0.5;
-    position: relative;
   }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item .pro_pic img {
+  main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide .pro_pic img {
+    display: block;
     width: 100%;
-    height: 100%;
-    vertical-align: top;
   }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item .pro_name {
-    width: 100%;
+  main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide .pro_name {
     font-size: 1.5rem;
     text-align: center;
-    font-weight: 500;
-    position: relative;
-    box-sizing: border-box;
-    padding-top: 10px;
-    flex-grow: 1;
   }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item .pro_name p {
-    display: block;
-    flex-grow: 1;
-    margin-bottom: auto;
-  }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item .pro_name span {
-    margin-top: auto;
-    display: block;
-    color: #888;
-  }
-  main.product_homepage .down_wrap .related_menu_wrap .owl-carousel2 .item .pro_name:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 2px;
-    background-image: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  main.product_homepage .down_wrap .related_menu_wrap .swiper .swiper-wrapper .swiper-slide .pro_name span {
+    color: #aaa;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -3375,13 +3473,10 @@ footer .footer_wrap .footer_copyright {
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
+    font-size: 3.5rem;
   }
   main.about_us .banner .slogan h3 {
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 3.5rem;
   }
   main.about_us .about_us {
     width: 100%;
@@ -3585,12 +3680,11 @@ footer .footer_wrap .footer_copyright {
   main.store_information .banner {
     height: 1200px;
   }
+  main.store_information .banner .slogan {
+    font-size: 3.5rem;
+  }
   main.store_information .banner h3 {
-    color: rgba(255, 255, 255, 0.253);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 3.5rem;
   }
   main.store_information .store_information {
     width: 100%;
@@ -3665,17 +3759,10 @@ footer .footer_wrap .footer_copyright {
     background-size: cover;
   }
   main.faq .banner .slogan {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
   }
   main.faq .banner .slogan h3 {
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 300;
-    white-space: nowrap;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 3.5rem;
   }
   main.faq .faq {
     width: 100%;
@@ -3999,6 +4086,12 @@ footer .footer_wrap .footer_copyright {
   main.product_list .list_product_wrap .sidebar .sidebar_project a p {
     font-size: 1.625rem;
     color: #f27127;
+  }
+  main.form_page .banner .slogan {
+    font-size: 3.5rem;
+  }
+  main.form_page .banner .slogan h3 {
+    font-size: 3.5rem;
   }
   main.form_page .form .form_wrap .menu_phone {
     display: none;
@@ -4332,24 +4425,24 @@ footer .footer_wrap .footer_copyright {
   }
   header .navbar .nav-menu .search-form {
     position: relative;
-    width: 150px;
     height: 40px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    gap: 5px;
     margin: 0 auto;
   }
   header .navbar .nav-menu .search-form .icon {
+    -webkit-text-fill-color: #aaa;
     border-style: none;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    position: absolute;
+    right: 10px;
   }
   header .navbar .nav-menu .search-form i {
     color: #fff;
   }
   header .navbar .nav-menu .search-form input#search {
-    width: 100px;
     height: 30px;
     border-radius: 10px;
     border: 1px solid #fff;
