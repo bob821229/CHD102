@@ -13,23 +13,6 @@ import {
 import { ShieldCheck, Sparkles, Wrench } from 'lucide-vue-next';
 
 const featureIcons = [ShieldCheck, Wrench, Sparkles];
-
-onMounted(() => {
-  const elements = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.16 },
-  );
-
-  elements.forEach((element) => observer.observe(element));
-});
 </script>
 
 <template>
