@@ -12,7 +12,7 @@ const { addToCart, isFavorite, toggleFavorite } = useShop();
 </script>
 
 <template>
-  <article class="product-card interactive-card reveal">
+  <article class="product-card interactive-card">
     <NuxtLink :to="`/products/${product.slug}`" class="relative block aspect-[4/3] overflow-hidden rounded bg-stone-950">
       <img :src="product.image" :alt="product.name" class="h-full w-full object-cover transition duration-500 hover:scale-105" />
       <span class="absolute left-3 top-3 rounded bg-ember-500 px-2 py-1 text-xs font-bold text-field-900">
