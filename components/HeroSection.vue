@@ -15,14 +15,15 @@ defineProps({
 
 <template>
   <section id="home" class="relative min-h-[92vh] overflow-hidden pt-20">
-    <img :src="image" alt="Cat Tactical Airsoft 展示空間" class="absolute inset-0 h-full w-full object-cover" />
+    <img :src="image" alt="Cat Tactical Airsoft 展示空間" class="hero-image-ambient absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-r from-field-900 via-field-900/72 to-field-900/15" />
     <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-field-900 to-transparent" />
 
-    <div class="pointer-events-none absolute right-6 top-32 hidden h-72 w-72 rounded-full border border-ember-300/20 lg:block">
+    <div class="radar-widget pointer-events-none absolute right-6 top-32 hidden h-72 w-72 rounded-full border border-ember-300/20 lg:block">
       <div class="absolute inset-8 rounded-full border border-white/10" />
       <div class="absolute left-1/2 top-0 h-full w-px bg-ember-300/20" />
       <div class="absolute left-0 top-1/2 h-px w-full bg-ember-300/20" />
+      <div class="radar-sweep" />
       <Radar class="absolute left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 text-ember-300/60" />
     </div>
 

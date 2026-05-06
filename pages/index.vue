@@ -44,11 +44,11 @@ onMounted(() => {
             <div class="eyebrow">ABOUT US</div>
             <h2 class="mt-3 font-display text-4xl font-bold text-white">把裝備選擇變簡單</h2>
             <p class="mt-5 leading-8 text-stone-300">
-              原本分散在多個 HTML 的內容，現在集中成 Nuxt SPA：商品、課程、門市、FAQ 與預約都在同一個流暢頁面內，維護也改由資料檔和元件管理。
+              Cat Tactical Airsoft 以玩家實際情境為核心，整合商品選購、課程訓練、門市諮詢與維修保養。網站重構後不再只是靜態作品集，而是更接近真實營運的電商與服務入口。
             </p>
           </div>
           <div class="grid gap-4 sm:grid-cols-3">
-            <article v-for="(feature, index) in features" :key="feature.title" class="feature-card reveal">
+            <article v-for="(feature, index) in features" :key="feature.title" class="feature-card interactive-card reveal">
               <component :is="featureIcons[index]" class="h-8 w-8 text-ember-300" />
               <h3 class="mt-5 text-lg font-semibold text-white">{{ feature.title }}</h3>
               <p class="mt-3 text-sm leading-6 text-stone-400">{{ feature.text }}</p>

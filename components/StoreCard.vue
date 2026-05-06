@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <article class="store-card reveal">
+  <article class="store-card interactive-card reveal">
     <img :src="store.image" :alt="store.name" class="h-72 w-full rounded object-cover" />
     <div class="mt-5">
       <h3 class="font-display text-2xl font-bold text-white">{{ store.name }}</h3>

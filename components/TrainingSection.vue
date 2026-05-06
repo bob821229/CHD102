@@ -23,7 +23,7 @@ defineProps({
       </div>
 
       <div class="mt-8 grid gap-5 lg:grid-cols-3">
-        <article v-for="course in courses" :key="course.title" class="feature-card reveal">
+        <article v-for="course in courses" :key="course.title" class="feature-card interactive-card reveal">
           <ShieldCheck class="h-8 w-8 text-ember-300" />
           <p class="mt-5 text-xs uppercase tracking-[0.22em] text-stone-500">{{ course.level }}</p>
           <h3 class="mt-2 text-xl font-semibold text-white">{{ course.title }}</h3>
