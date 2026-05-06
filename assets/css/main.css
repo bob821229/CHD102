@@ -97,10 +97,12 @@
 
   .radar-sweep {
     position: absolute;
-    inset: 50% 50% auto auto;
-    height: 1px;
+    left: 50%;
+    top: 50%;
+    height: 2px;
     width: 50%;
-    transform-origin: left center;
+    transform-origin: 0 50%;
+    transform: rotate(0deg);
     background: linear-gradient(90deg, rgba(253, 186, 116, 0.7), rgba(253, 186, 116, 0));
     animation: radar-sweep 5s linear infinite;
   }
@@ -185,6 +187,10 @@
 }
 
 @keyframes radar-sweep {
+  from {
+    transform: rotate(0deg);
+  }
+
   to {
     transform: rotate(360deg);
   }

@@ -1,3 +1,7 @@
+<script setup>
+import logoUrl from '../assets/brand/ct-logo.png';
+</script>
+
 <template>
   <footer class="relative overflow-hidden border-t border-white/10 bg-field-900 px-5 py-10 text-sm text-stone-500">
     <svg class="footer-signal absolute inset-x-0 bottom-0 h-28 w-full text-ember-300/70" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
@@ -19,7 +23,9 @@
     <div class="relative mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-end md:justify-between">
       <div>
         <div class="flex items-center gap-3">
-          <span class="grid h-10 w-10 place-items-center rounded border border-ember-400/50 bg-ember-500/15 font-display text-lg font-bold text-ember-300">CT</span>
+          <span class="grid h-11 w-11 place-items-center overflow-hidden rounded border border-ember-400/40 bg-black">
+            <img :src="logoUrl" alt="Cat Tactical Airsoft logo" class="h-full w-full object-cover" />
+          </span>
           <div>
             <p class="font-display text-lg font-semibold text-white">Cat Tactical Airsoft</p>
             <p class="text-xs uppercase tracking-[0.24em] text-stone-500">Loadout. Training. Service.</p>

@@ -1,5 +1,6 @@
 <script setup>
 import { Heart, Menu, Minus, Plus, Search, ShoppingBag, Trash2, X } from 'lucide-vue-next';
+import logoUrl from '../assets/brand/ct-logo.png';
 import { products } from '../data/catalog';
 
 defineProps({
@@ -31,8 +32,8 @@ const searchResults = computed(() => (query.value ? searchProducts(query.value) 
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-field-900/82 backdrop-blur-xl">
     <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
       <a href="#home" class="flex items-center gap-3">
-        <span class="grid h-11 w-11 place-items-center rounded border border-ember-400/50 bg-ember-500/15 font-display text-xl font-bold text-ember-300 shadow-glow">
-          CT
+        <span class="grid h-12 w-12 place-items-center overflow-hidden rounded border border-ember-400/40 bg-black shadow-glow">
+          <img :src="logoUrl" alt="Cat Tactical Airsoft logo" class="h-full w-full object-cover" />
         </span>
         <span class="leading-tight">
           <span class="block font-display text-lg font-semibold tracking-wide text-white">Cat Tactical</span>
