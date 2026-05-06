@@ -1,5 +1,5 @@
 <script setup>
-import { Heart, ShoppingBag, Star } from 'lucide-vue-next';
+import { Heart, ShoppingBag } from 'lucide-vue-next';
 
 defineProps({
   product: {
@@ -31,8 +31,8 @@ const { addToCart, isFavorite, toggleFavorite } = useShop();
       </button>
     </div>
     <div class="mt-3 flex items-center gap-2 text-sm text-stone-400">
-      <Star class="h-4 w-4 fill-ember-400 text-ember-400" />
-      {{ product.rating }} 玩家評分
+      <RatingStars :rating="product.rating" size="sm" :label="`${product.name} 玩家評分 ${product.rating}`" />
+      <span>玩家評分</span>
     </div>
     <ul class="mt-4 grid gap-2 text-sm text-stone-400">
       <li v-for="spec in product.specs" :key="spec" class="flex items-center gap-2">

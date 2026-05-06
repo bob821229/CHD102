@@ -18,6 +18,12 @@ const maxPrice = ref(40000);
 const inStockOnly = ref(false);
 const minRating = ref(0);
 const sortMode = ref('featured');
+const ratingOptions = [
+  { label: '不限評分', value: 0 },
+  { label: '4.7+', value: 4.7 },
+  { label: '4.8+', value: 4.8 },
+  { label: '4.9+', value: 4.9 },
+];
 
 const highestPrice = computed(() => Math.max(...props.products.map((product) => product.price), 0));
 const allCategory = computed(() => props.categories[0] ?? '全部商品');
@@ -111,12 +117,20 @@ watch(
 
         <label class="rounded border border-white/10 bg-white/[0.035] p-4">
           <span class="text-sm font-semibold text-white">最低評分</span>
-          <select v-model.number="minRating" class="form-input mt-4">
-            <option :value="0">不限評分</option>
-            <option :value="4.7">4.7 以上</option>
-            <option :value="4.8">4.8 以上</option>
-            <option :value="4.9">4.9 以上</option>
-          </select>
+          <div class="mt-4 grid gap-2">
+            <button
+              v-for="option in ratingOptions"
+              :key="option.value"
+              type="button"
+              class="flex items-center justify-between rounded border px-3 py-2 text-left transition"
+              :class="minRating === option.value ? 'border-ember-300/70 bg-ember-500/15 text-white' : 'border-white/10 bg-field-900 text-stone-300 hover:border-ember-300/40'"
+              @click="minRating = option.value"
+            >
+              <span class="text-sm font-semibold">{{ option.label }}</span>
+              <RatingStars v-if="option.value" :rating="option.value" size="sm" :show-score="false" :label="`${option.value} 星以上`" />
+              <span v-else class="text-xs text-stone-500">ALL</span>
+            </button>
+          </div>
         </label>
 
         <label class="rounded border border-white/10 bg-white/[0.035] p-4">
