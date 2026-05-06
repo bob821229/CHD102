@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Rajdhani:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: theme('fontFamily.sans');
+    background: #10120f;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .primary-button {
+    @apply inline-flex items-center gap-2 rounded border border-ember-300/40 bg-ember-500 px-5 py-2.5 text-sm font-bold text-field-900 transition hover:bg-ember-400 focus:outline-none focus:ring-2 focus:ring-ember-300;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center gap-2 rounded border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-semibold text-stone-100 transition hover:border-ember-300/50 hover:text-ember-200 focus:outline-none focus:ring-2 focus:ring-ember-300;
+  }
+
+  .icon-button {
+    @apply grid h-11 w-11 place-items-center rounded border border-white/[0.12] bg-white/5 text-stone-200 transition hover:border-ember-300/50 hover:text-ember-200 focus:outline-none focus:ring-2 focus:ring-ember-300;
+  }
+
+  .eyebrow {
+    @apply font-display text-sm font-bold uppercase tracking-[0.22em] text-ember-300;
+  }
+
+  .metric {
+    @apply rounded border border-white/10 bg-white/[0.04] p-6;
+  }
+
+  .section-heading {
+    @apply flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between;
+  }
+
+  .section-heading h2 {
+    @apply mt-3 font-display text-4xl font-bold text-white sm:text-5xl;
+  }
+
+  .chip {
+    @apply shrink-0 rounded border border-white/10 bg-white/[0.04] px-5 py-2.5 text-sm font-semibold text-stone-300 transition hover:border-ember-300/50 hover:text-ember-200;
+  }
+
+  .chip-active {
+    @apply border-ember-300/60 bg-ember-500 text-field-900 hover:text-field-900;
+  }
+
+  .product-card,
+  .feature-card,
+  .store-card,
+  .faq-item {
+    @apply rounded border border-white/10 bg-white/[0.045] p-4 shadow-2xl shadow-black/20;
+  }
+
+  .form-input {
+    @apply w-full rounded border border-white/10 bg-field-900 px-4 py-3 text-stone-100 outline-none transition placeholder:text-stone-500 focus:border-ember-300;
+  }
+}
