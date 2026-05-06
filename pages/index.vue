@@ -58,7 +58,9 @@ onMounted(() => {
       </section>
 
       <ProductSection :categories="categories" :products="products" />
+      <GallerySection :assets="assets" />
       <TrainingSection :courses="trainingCourses" />
+      <SupportSection :image="assets.supportBanner" />
       <StoreSection :stores="stores" />
       <FaqAccordion :faqs="faqs" />
       <MemberSection />
