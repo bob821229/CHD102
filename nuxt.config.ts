@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-05-06',
+  ssr: false,
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/css/main.css'],
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Cat Tactical Airsoft 提供 Airsoft 裝備、商品諮詢、門市體驗與戰術訓練服務。',
+            'Cat Tactical Airsoft 是 Airsoft 裝備選購、門市諮詢、維修升級與訓練體驗的戰術運動用品網站。',
         },
       ],
     },

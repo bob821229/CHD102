@@ -18,6 +18,11 @@
   * {
     box-sizing: border-box;
   }
+
+  ::selection {
+    background: rgba(249, 115, 22, 0.35);
+    color: white;
+  }
 }
 
 @layer components {
@@ -66,5 +71,18 @@
 
   .form-input {
     @apply w-full rounded border border-white/10 bg-field-900 px-4 py-3 text-stone-100 outline-none transition placeholder:text-stone-500 focus:border-ember-300;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 700ms ease,
+      transform 700ms ease;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
