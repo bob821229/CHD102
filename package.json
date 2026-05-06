@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev --host 127.0.0.1",
+    "dev": "nuxt dev --hostname 127.0.0.1",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "preview": "nuxt preview --host 127.0.0.1"
+    "preview": "nuxt preview --hostname 127.0.0.1"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.2",
